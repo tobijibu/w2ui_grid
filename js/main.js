@@ -1,0 +1,1 @@
+var linkClicked=function(){},initStateChange=function(){w2ui.mygrid&&w2ui.mygrid.destroy(),w2ui.mygrid2&&w2ui.mygrid2.destroy(),w2ui.mygrid3&&w2ui.mygrid3.destroy()},newPageReady=function(){},transitionCompleted=function(){"function"==typeof createObj&&createObj(),"function"==typeof createObj2&&createObj2(),"function"==typeof createObj3&&createObj3()};

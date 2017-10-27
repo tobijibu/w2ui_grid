@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>概略 | w2ui.grid - にほんご。</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="http://tr.you84815.space/w2ui_grid/favicon.ico">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <link rel="stylesheet" href="./css/fx.css">
+    <link rel="stylesheet" href="./css/w2ui-1.5.rc1.min.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      
+      ga('create', 'UA-106478577-1', 'auto');
+      //ga('send', 'pageview');
+    </script>
+    <script src="./js/highlight.pack.js"></script>
+    <script src="./js/barba.min.js"></script>
+    <script src="./js/base.js"></script>
+    <script src="./js/jquery-2.2.4.min.js"></script>
+    <script src="./js/w2ui-1.5.rc1.min.js"></script>
+  </head>
+</html>
+<body>
+  <header>
+    <div class="icon"><a class="no-barba" href="http://tr.you84815.space/"><img src="./img/icon.png"></a></div>
+    <div class="navi_toggle" onclick="toggleMenu()"><i class="menu-icon material-icons" id="navi_icon"></i></div>
+    <div class="title">w2ui.grid - <a class="no-barba" href="http://tr.you84815.space/">にほんご。</a></div>
+  </header>
+  <script>
+    toggleMenu = function() {
+      let navi = document.getElementsByClassName("navi");
+      navi[0].classList.toggle('show');
+      let navi_icon = document.getElementById("navi_icon");
+      navi_icon.classList.toggle('active');
+    }
+  </script>
+  <div id="barba-wrapper">
+    <div class="barba-container">
+      <div class="wrapper">
+        <div class="navi">
+          <h1><a href="./">Home</a></h1>
+          <h1><a class="active" href="./overview.html">Overview</a></h1>
+          <h1 onclick="toggleEvents()">Events</h1>
+          <div class="hidden" id="navi_events">
+            <h2>Events</h2>
+            <ul>
+              <li class="onAdd"><a href="./events/onAdd.html">onAdd</a></li>
+              <li class="onChange"><a href="./events/onChange.html">onChange</a></li>
+              <li class="onClick"><a href="./events/onClick.html">onClick</a></li>
+              <li class="onCollapse"><a href="./events/onCollapse.html">onCollapse</a></li>
+              <li class="onColumnClick"><a href="./events/onColumnClick.html">onColumnClick</a></li>
+              <li class="onColumnOnOff"><a href="./events/onColumnOnOff.html">onColumnOnOff</a></li>
+              <li class="onColumnResize"><a href="./events/onColumnResize.html">onColumnResize</a></li>
+              <li class="onContextMenu"><a href="./events/onContextMenu.html">onContextMenu</a></li>
+              <li class="onCopy"><a href="./events/onCopy.html">onCopy</a></li>
+              <li class="onDblClick"><a href="./events/onDblClick.html">onDblClick</a></li>
+              <li class="onDelete"><a href="./events/onDelete.html">onDelete</a></li>
+              <li class="onEdit"><a href="./events/onEdit.html">onEdit</a></li>
+              <li class="onEditField"><a href="./events/onEditField.html">onEditField</a></li>
+              <li class="onError"><a href="./events/onError.html">onError</a></li>
+              <li class="onExpand"><a href="./events/onExpand.html">onExpand</a></li>
+              <li class="onKeydown"><a href="./events/onKeydown.html">onKeydown</a></li>
+              <li class="onLoad"><a href="./events/onLoad.html">onLoad</a></li>
+              <li class="onMenuClick"><a href="./events/onMenuClick.html">onMenuClick</a></li>
+              <li class="onPaste"><a href="./events/onPaste.html">onPaste</a></li>
+              <li class="onReload"><a href="./events/onReload.html">onReload</a></li>
+              <li class="onRequest"><a href="./events/onRequest.html">onRequest</a></li>
+              <li class="onRestore"><a href="./events/onRestore.html">onRestore</a></li>
+              <li class="onSave"><a href="./events/onSave.html">onSave</a></li>
+              <li class="onSearch"><a href="./events/onSearch.html">onSearch</a></li>
+              <li class="onSelect"><a href="./events/onSelect.html">onSelect</a></li>
+              <li class="onSelectionExtend"><a href="./events/onSelectionExtend.html">onSelectionExtend</a></li>
+              <li class="onSort"><a href="./events/onSort.html">onSort</a></li>
+              <li class="onStateRestore"><a href="./events/onStateRestore.html">onStateRestore</a></li>
+              <li class="onStateSave"><a href="./events/onStateSave.html">onStateSave</a></li>
+              <li class="onSubmit"><a href="./events/onSubmit.html">onSubmit</a></li>
+              <li class="onToolbar"><a href="./events/onToolbar.html">onToolbar</a></li>
+              <li class="onUnselect"><a href="./events/onUnselect.html">onUnselect</a></li>
+            </ul>
+            <h2>CommonEvents</h2>
+            <ul>
+              <li class="onDestroy"><a class="no-barba" href="./../w2ui_utils/events/onDestroy.html">onDestroy</a></li>
+              <li class="onRefresh"><a class="no-barba" href="./../w2ui_utils/events/onRefresh.html">onRefresh</a></li>
+              <li class="onRender"><a class="no-barba" href="./../w2ui_utils/events/onRender.html">onRender</a></li>
+              <li class="onResize"><a class="no-barba" href="./../w2ui_utils/events/onResize.html">onResize</a></li>
+            </ul>
+          </div>
+          <h1 onclick="toggleProperties()">Properties</h1>
+          <div class="hidden" id="navi_properties">
+            <h2>Properties</h2>
+            <ul>
+              <li class="autoLoad"><a href="./properties/autoLoad.html">autoLoad</a></li>
+              <li class="buttons"><a href="./properties/buttons.html">buttons</a></li>
+              <li class="columnGroups"><a href="./properties/columnGroups.html">columnGroups</a></li>
+              <li class="columns"><a href="./properties/columns.html">columns</a></li>
+              <li class="fixedBody"><a href="./properties/fixedBody.html">fixedBody</a></li>
+              <li class="header"><a href="./properties/header.html">header</a></li>
+              <li class="keyboard"><a href="./properties/keyboard.html">keyboard</a></li>
+              <li class="last"><a href="./properties/last.html">last</a></li>
+              <li class="limit"><a href="./properties/limit.html">limit</a></li>
+              <li class="markSearch"><a href="./properties/markSearch.html">markSearch</a></li>
+              <li class="menu"><a href="./properties/menu.html">menu</a></li>
+              <li class="method"><a href="./properties/method.html">method</a></li>
+              <li class="msgAJAXerror"><a href="./properties/msgAJAXerror.html">msgAJAXerror</a></li>
+              <li class="msgDelete"><a href="./properties/msgDelete.html">msgDelete</a></li>
+              <li class="msgNotJSON"><a href="./properties/msgNotJSON.html">msgNotJSON</a></li>
+              <li class="msgRefresh"><a href="./properties/msgRefresh.html">msgRefresh</a></li>
+              <li class="multiSearch"><a href="./properties/multiSearch.html">multiSearch</a></li>
+              <li class="multiSelect"><a href="./properties/multiSelect.html">multiSelect</a></li>
+              <li class="multiSort"><a href="./properties/multiSort.html">multiSort</a></li>
+              <li class="offset"><a href="./properties/offset.html">offset</a></li>
+              <li class="parser"><a href="./properties/parser.html">parser</a></li>
+              <li class="postData"><a href="./properties/postData.html">postData</a></li>
+              <li class="ranges"><a href="./properties/ranges.html">ranges</a></li>
+              <li class="recid"><a href="./properties/recid.html">recid</a></li>
+              <li class="recordHeight"><a href="./properties/recordHeight.html">recordHeight</a></li>
+              <li class="records"><a href="./properties/records.html">records</a></li>
+              <li class="reorderColumns"><a href="./properties/reorderColumns.html">reorderColumns</a></li>
+              <li class="reorderRows"><a href="./properties/reorderRows.html">reorderRows</a></li>
+              <li class="routeData"><a href="./properties/routeData.html">routeData</a></li>
+              <li class="searchData"><a href="./properties/searchData.html">searchData</a></li>
+              <li class="searches"><a href="./properties/searches.html">searches</a></li>
+              <li class="selectType"><a href="./properties/selectType.html">selectType</a></li>
+              <li class="show"><a href="./properties/show.html">show</a></li>
+              <li class="sortData"><a href="./properties/sortData.html">sortData</a></li>
+              <li class="summary"><a href="./properties/summary.html">summary</a></li>
+              <li class="toolbar"><a href="./properties/toolbar.html">toolbar</a></li>
+              <li class="total"><a href="./properties/total.html">total</a></li>
+              <li class="url"><a href="./properties/url.html">url</a></li>
+            </ul>
+            <h2>CommonProperties</h2>
+            <ul>
+              <li class="box"><a class="no-barba" href="./../w2ui_utils/properties/box.html">box</a></li>
+              <li class="handlers"><a class="no-barba" href="./../w2ui_utils/properties/handlers.html">handlers</a></li>
+              <li class="name"><a class="no-barba" href="./../w2ui_utils/properties/name.html">name</a></li>
+              <li class="style"><a class="no-barba" href="./../w2ui_utils/properties/style.html">style</a></li>
+            </ul>
+          </div>
+          <h1 onclick="toggleMethods()">Methods</h1>
+          <div class="hidden" id="navi_methods">
+            <h2>Methods</h2>
+            <ul>
+              <li class="add"><a href="./methods/add.html">add</a></li>
+              <li class="addColumn"><a href="./methods/addColumn.html">addColumn</a></li>
+              <li class="addRange"><a href="./methods/addRange.html">addRange</a></li>
+              <li class="addSearch"><a href="./methods/addSearch.html">addSearch</a></li>
+              <li class="clear"><a href="./methods/clear.html">clear</a></li>
+              <li class="click"><a href="./methods/click.html">click</a></li>
+              <li class="collapse"><a href="./methods/collapse.html">collapse</a></li>
+              <li class="columnClick"><a href="./methods/columnClick.html">columnClick</a></li>
+              <li class="columnOnOff"><a href="./methods/columnOnOff.html">columnOnOff</a></li>
+              <li class="contextMenu"><a href="./methods/contextMenu.html">contextMenu</a></li>
+              <li class="copy"><a href="./methods/copy.html">copy</a></li>
+              <li class="dblClick"><a href="./methods/dblClick.html">dblClick</a></li>
+              <li class="delete"><a href="./methods/delete.html">delete</a></li>
+              <li class="editField"><a href="./methods/editField.html">editField</a></li>
+              <li class="error"><a href="./methods/error.html">error</a></li>
+              <li class="expand"><a href="./methods/expand.html">expand</a></li>
+              <li class="find"><a href="./methods/find.html">find</a></li>
+              <li class="get"><a href="./methods/get.html">get</a></li>
+              <li class="getCellHTML"><a href="./methods/getCellHTML.html">getCellHTML</a></li>
+              <li class="getCellValue"><a href="./methods/getCellValue.html">getCellValue</a></li>
+              <li class="getChanges"><a href="./methods/getChanges.html">getChanges</a></li>
+              <li class="getColumn"><a href="./methods/getColumn.html">getColumn</a></li>
+              <li class="getColumnsHTML"><a href="./methods/getColumnsHTML.html">getColumnsHTML</a></li>
+              <li class="getFooterHTML"><a href="./methods/getFooterHTML.html">getFooterHTML</a></li>
+              <li class="getRangeData"><a href="./methods/getRangeData.html">getRangeData</a></li>
+              <li class="getRecordHTML"><a href="./methods/getRecordHTML.html">getRecordHTML</a></li>
+              <li class="getRecordsHTML"><a href="./methods/getRecordsHTML.html">getRecordsHTML</a></li>
+              <li class="getSearch"><a href="./methods/getSearch.html">getSearch</a></li>
+              <li class="getSearchData"><a href="./methods/getSearchData.html">getSearchData</a></li>
+              <li class="getSearchesHTML"><a href="./methods/getSearchesHTML.html">getSearchesHTML</a></li>
+              <li class="getSelection"><a href="./methods/getSelection.html">getSelection</a></li>
+              <li class="getSummaryHTML"><a href="./methods/getSummaryHTML.html">getSummaryHTML</a></li>
+              <li class="hideColumn"><a href="./methods/hideColumn.html">hideColumn</a></li>
+              <li class="hideSearch"><a href="./methods/hideSearch.html">hideSearch</a></li>
+              <li class="initAllField"><a href="./methods/initAllField.html">initAllField</a></li>
+              <li class="initColumnOnOff"><a href="./methods/initColumnOnOff.html">initColumnOnOff</a></li>
+              <li class="initOperator"><a href="./methods/initOperator.html">initOperator</a></li>
+              <li class="initResize"><a href="./methods/initResize.html">initResize</a></li>
+              <li class="initSearches"><a href="./methods/initSearches.html">initSearches</a></li>
+              <li class="initToolbar"><a href="./methods/initToolbar.html">initToolbar</a></li>
+              <li class="keydown"><a href="./methods/keydown.html">keydown</a></li>
+              <li class="load"><a href="./methods/load.html">load</a></li>
+              <li class="localSearch"><a href="./methods/localSearch.html">localSearch</a></li>
+              <li class="localSort"><a href="./methods/localSort.html">localSort</a></li>
+              <li class="lock"><a href="./methods/lock.html">lock</a></li>
+              <li class="menuClick"><a href="./methods/menuClick.html">menuClick</a></li>
+              <li class="mergeChanges"><a href="./methods/mergeChanges.html">mergeChanges</a></li>
+              <li class="nextCell"><a href="./methods/nextCell.html">nextCell</a></li>
+              <li class="nextRow"><a href="./methods/nextRow.html">nextRow</a></li>
+              <li class="parseField"><a href="./methods/parseField.html">parseField</a></li>
+              <li class="paste"><a href="./methods/paste.html">paste</a></li>
+              <li class="prevCell"><a href="./methods/prevCell.html">prevCell</a></li>
+              <li class="prevRow"><a href="./methods/prevRow.html">prevRow</a></li>
+              <li class="refreshCell"><a href="./methods/refreshCell.html">refreshCell</a></li>
+              <li class="refreshRanges"><a href="./methods/refreshRanges.html">refreshRanges</a></li>
+              <li class="refreshRow"><a href="./methods/refreshRow.html">refreshRow</a></li>
+              <li class="reload"><a href="./methods/reload.html">reload</a></li>
+              <li class="remove"><a href="./methods/remove.html">remove</a></li>
+              <li class="removeColumn"><a href="./methods/removeColumn.html">removeColumn</a></li>
+              <li class="removeRange"><a href="./methods/removeRange.html">removeRange</a></li>
+              <li class="removeSearch"><a href="./methods/removeSearch.html">removeSearch</a></li>
+              <li class="request"><a href="./methods/request.html">request</a></li>
+              <li class="requestComplete"><a href="./methods/requestComplete.html">requestComplete</a></li>
+              <li class="reset"><a href="./methods/reset.html">reset</a></li>
+              <li class="resizeBoxes"><a href="./methods/resizeBoxes.html">resizeBoxes</a></li>
+              <li class="resizeRecords"><a href="./methods/resizeRecords.html">resizeRecords</a></li>
+              <li class="save"><a href="./methods/save.html">save</a></li>
+              <li class="scroll"><a href="./methods/scroll.html">scroll</a></li>
+              <li class="scrollIntoView"><a href="./methods/scrollIntoView.html">scrollIntoView</a></li>
+              <li class="search"><a href="./methods/search.html">search</a></li>
+              <li class="searchClose"><a href="./methods/searchClose.html">searchClose</a></li>
+              <li class="searchOpen"><a href="./methods/searchOpen.html">searchOpen</a></li>
+              <li class="searchReset"><a href="./methods/searchReset.html">searchReset</a></li>
+              <li class="searchShowFields"><a href="./methods/searchShowFields.html">searchShowFields</a></li>
+              <li class="select"><a href="./methods/select.html">select</a></li>
+              <li class="selectAll"><a href="./methods/selectAll.html">selectAll</a></li>
+              <li class="selectNone"><a href="./methods/selectNone.html">selectNone</a></li>
+              <li class="set"><a href="./methods/set.html">set</a></li>
+              <li class="showColumn"><a href="./methods/showColumn.html">showColumn</a></li>
+              <li class="showSearch"><a href="./methods/showSearch.html">showSearch</a></li>
+              <li class="skip"><a href="./methods/skip.html">skip</a></li>
+              <li class="sort"><a href="./methods/sort.html">sort</a></li>
+              <li class="stateReset"><a href="./methods/stateReset.html">stateReset</a></li>
+              <li class="stateRestore"><a href="./methods/stateRestore.html">stateRestore</a></li>
+              <li class="stateSave"><a href="./methods/stateSave.html">stateSave</a></li>
+              <li class="status"><a href="./methods/status.html">status</a></li>
+              <li class="toggle"><a href="./methods/toggle.html">toggle</a></li>
+              <li class="toggleColumn"><a href="./methods/toggleColumn.html">toggleColumn</a></li>
+              <li class="toggleSearch"><a href="./methods/toggleSearch.html">toggleSearch</a></li>
+              <li class="toolbarAdd"><a href="./methods/toolbarAdd.html">toolbarAdd</a></li>
+              <li class="toolbarDelete"><a href="./methods/toolbarDelete.html">toolbarDelete</a></li>
+              <li class="unlock"><a href="./methods/unlock.html">unlock</a></li>
+              <li class="unselect"><a href="./methods/unselect.html">unselect</a></li>
+            </ul>
+            <h2>CommonMethods</h2>
+            <ul>
+              <li class="destroy"><a class="no-barba" href="./../w2ui_utils/methods/destroy.html">destroy</a></li>
+              <li class="off"><a class="no-barba" href="./../w2ui_utils/methods/off.html">off</a></li>
+              <li class="on"><a class="no-barba" href="./../w2ui_utils/methods/on.html">on</a></li>
+              <li class="refresh"><a class="no-barba" href="./../w2ui_utils/methods/refresh.html">refresh</a></li>
+              <li class="render"><a class="no-barba" href="./../w2ui_utils/methods/render.html">render</a></li>
+              <li class="resize"><a class="no-barba" href="./../w2ui_utils/methods/resize.html">resize</a></li>
+              <li class="trigger"><a class="no-barba" href="./../w2ui_utils/methods/trigger.html">trigger</a></li>
+            </ul>
+          </div>
+          <hr>
+          <h1>HTML Source</h1>
+          <div id="navi_source"><a href="https://github.com/tobijibu/w2ui_grid/archive/master.zip"><i class="menu-icon material-icons">&#xE884;</i></a><a href="https://github.com/tobijibu/w2ui_grid/"><i class="menu-icon material-icons">&#xE86F;</i></a></div>
+          <script>
+            toggleEvents = function() {
+              let elem = document.getElementById('navi_events');
+              elem.classList.toggle('hidden');
+            }
+            toggleProperties = function() {
+              let elem = document.getElementById('navi_properties');
+              elem.classList.toggle('hidden');
+            }
+            toggleMethods = function() {
+              let elem = document.getElementById('navi_methods');
+              elem.classList.toggle('hidden');
+            }
+          </script>
+        </div>
+        <div class="main">
+          <h1>概略</h1>
+          <p>
+            w2gridはローカルデータやリモートデータを使ってグリッドを生成することができます。
+            gridはw2uiの中で最も複雑で柔軟性のある機能です。
+            グリッドのデータ検索、列のソート、インライン編集等を定義して利用できます。
+          </p>
+          <h3>デモ1</h3>
+          <p>
+            gridの簡単な使い方は以下の通りです。必要最低限のHTML、JavaScriptで表示しています。
+            以下の例ではローカルでデータを使っており、サーバのデータは取得していません。
+          </p>
+          <pre><code class="html">&#x3C;!DOCTYPE html&#x3E;
+&#x3C;html&#x3E;
+&#x3C;head&#x3E;
+    &#x3C;link rel=&#x22;stylesheet&#x22; type=&#x22;text/css&#x22; href=&#x22;http://w2ui.com/src/w2ui-1.4.min.css&#x22; /&#x3E;
+    &#x3C;script src=&#x22;http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js&#x22;&#x3E;&#x3C;/script&#x3E;
+    &#x3C;script type=&#x22;text/javascript&#x22; src=&#x22;http://w2ui.com/src/w2ui-1.4.min.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;/head&#x3E;
+&#x3C;body&#x3E;
+    &#x3C;div id=&#x22;myGrid&#x22; style=&#x22;height: 450px&#x22;&#x3E;&#x3C;/div&#x3E;
+&#x3C;/body&#x3E;
+&#x3C;script&#x3E;
+$(&#x27;#myGrid&#x27;).w2grid({ 
+    name   : &#x27;myGrid&#x27;,
+    columns: [
+        { field: &#x27;fname&#x27;, caption: &#x27;First Name&#x27;, size: &#x27;30%&#x27; },
+        { field: &#x27;lname&#x27;, caption: &#x27;Last Name&#x27;, size: &#x27;30%&#x27; },
+        { field: &#x27;email&#x27;, caption: &#x27;Email&#x27;, size: &#x27;40%&#x27; },
+        { field: &#x27;sdate&#x27;, caption: &#x27;Start Date&#x27;, size: &#x27;120px&#x27; },
+    ],
+    records: [
+        { recid: 1, fname: &#x27;John&#x27;, lname: &#x27;Doe&#x27;, email: &#x27;jdoe@gmail.com&#x27;, sdate: &#x27;4/3/2012&#x27; },
+        { recid: 2, fname: &#x27;Stuart&#x27;, lname: &#x27;Motzart&#x27;, email: &#x27;jdoe@gmail.com&#x27;, sdate: &#x27;4/3/2012&#x27; },
+        { recid: 3, fname: &#x27;Jin&#x27;, lname: &#x27;Franson&#x27;, email: &#x27;jdoe@gmail.com&#x27;, sdate: &#x27;4/3/2012&#x27; },
+        { recid: 4, fname: &#x27;Susan&#x27;, lname: &#x27;Ottie&#x27;, email: &#x27;jdoe@gmail.com&#x27;, sdate: &#x27;4/3/2012&#x27; },
+        { recid: 5, fname: &#x27;Kelly&#x27;, lname: &#x27;Silver&#x27;, email: &#x27;jdoe@gmail.com&#x27;, sdate: &#x27;4/3/2012&#x27; },
+        { recid: 6, fname: &#x27;Francis&#x27;, lname: &#x27;Gatos&#x27;, email: &#x27;jdoe@gmail.com&#x27;, sdate: &#x27;4/3/2012&#x27; },
+        { recid: 7, fname: &#x27;Mark&#x27;, lname: &#x27;Welldo&#x27;, email: &#x27;jdoe@gmail.com&#x27;, sdate: &#x27;4/3/2012&#x27; },
+        { recid: 8, fname: &#x27;Thomas&#x27;, lname: &#x27;Bahh&#x27;, email: &#x27;jdoe@gmail.com&#x27;, sdate: &#x27;4/3/2012&#x27; },
+        { recid: 9, fname: &#x27;Sergei&#x27;, lname: &#x27;Rachmaninov&#x27;, email: &#x27;jdoe@gmail.com&#x27;, sdate: &#x27;4/3/2012&#x27; }
+    ]
+});
+&#x3C;/script&#x3E;
+&#x3C;/html&#x3E;</code></pre><br><br>
+          <h3>デモ2</h3>
+          <p>
+            次の例はデモ1と似ていますが、サーバからデータを取得するパターンです。
+            サーバに"data/records.json"が存在し、JSON形式のデータを返すことを前提としています。
+          </p>
+          <pre><code class="html">&#x3C;!DOCTYPE html&#x3E;
+    &#x3C;html&#x3E;
+    &#x3C;head&#x3E;
+        &#x3C;link rel=&#x22;stylesheet&#x22; type=&#x22;text/css&#x22; href=&#x22;http://w2ui.com/src/w2ui-1.4.min.css&#x22; /&#x3E;
+        &#x3C;script src=&#x22;http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js&#x22;&#x3E;&#x3C;/script&#x3E;
+        &#x3C;script type=&#x22;text/javascript&#x22; src=&#x22;http://w2ui.com/src/w2ui-1.4.min.js&#x22;&#x3E;&#x3C;/script&#x3E;
+    &#x3C;/head&#x3E;
+    &#x3C;body&#x3E;
+        &#x3C;div id=&#x22;myGrid&#x22; style=&#x22;height: 450px&#x22;&#x3E;&#x3C;/div&#x3E;
+    &#x3C;/body&#x3E;
+    &#x3C;script&#x3E;
+    $(&#x27;#myGrid&#x27;).w2grid({
+        name   : &#x27;myGrid&#x27;,
+        url    : &#x27;data/records.json&#x27;,
+        columns: [
+            { field: &#x27;fname&#x27;, caption: &#x27;First Name&#x27;, size: &#x27;30%&#x27; },
+            { field: &#x27;lname&#x27;, caption: &#x27;Last Name&#x27;, size: &#x27;30%&#x27; },
+            { field: &#x27;email&#x27;, caption: &#x27;Email&#x27;, size: &#x27;40%&#x27; },
+            { field: &#x27;sdate&#x27;, caption: &#x27;Start Date&#x27;, size: &#x27;120px&#x27; },
+        ]
+    });
+    &#x3C;/script&#x3E;
+    &#x3C;/html&#x3E;</code></pre><br><br>
+          <h3 id="data_structures">データ構造</h3>
+          <p>
+            グリッドはHTTP POSTでリクエストを送信することでサーバと通信します。
+            各リクエストで全てのパラメータを送信されるわけではありませんので注意して下さい。
+            ユーザーが検索や、ソート等を実行しなければ、そのパラメータは送信されない可能性があります。<a href="./properties/postData.html"><code>.postData</code></a>プロパティで定義されたパラメータは全て送信されます。
+          </p>
+          <pre><code class="json">{
+    &#x22;cmd&#x22;         : &#x22;get-records&#x22;,
+    &#x22;limit&#x22;       : 50,
+    &#x22;offset&#x22;      : 0,
+    &#x22;selected&#x22;    : [1, 2],
+    &#x22;searchLogic&#x22; : &#x22;AND&#x22;,
+    &#x22;search&#x22;: [
+        { &#x22;field&#x22;: &#x22;fname&#x22;, &#x22;type&#x22;: &#x22;text&#x22;, &#x22;value&#x22;: &#x22;vit&#x22;, &#x22;operator&#x22;: &#x22;is&#x22; },
+        { &#x22;field&#x22;: &#x22;age&#x22;, &#x22;type&#x22;: &#x22;int&#x22;, &#x22;value&#x22;: [10, 20], &#x22;operator&#x22;: &#x22;between&#x22; }
+    ],
+    &#x22;sort&#x22;: [
+        { &#x22;field&#x22;: &#x22;fname&#x22;, &#x22;direction&#x22;: &#x22;ASC&#x22; },
+        { &#x22;field&#x22;: &#x22;Lname&#x22;, &#x22;direction&#x22;: &#x22;DESC&#x22; }
+    ]
+}</code></pre><br>
+          <p>上記の場合、送信パラメータは以下のようになります。</p>
+          <pre><code class="json">&#x26;cmd: get-records
+&#x26;limit: 50
+&#x26;offset: 0
+&#x26;selected[]: 1
+&#x26;selected[]: 2
+&#x26;searchLogic: AND
+&#x26;search[0][field]: fname
+&#x26;search[0][type]: text
+&#x26;search[0][operator]: is
+&#x26;search[0][value]: vit
+&#x26;search[1][field]: age
+&#x26;search[1][type]: int
+&#x26;search[1][operator]: between
+&#x26;search[1][value][]: 10
+&#x26;search[1][value][]: 20
+&#x26;sort[0][field]: fname
+&#x26;sort[0][direction]: asc
+&#x26;sort[1][field]: lname
+&#x26;sort[1][direction]: desc</code></pre><br>
+          <p>
+            サーバから取得したデータは以下のようなJSON形式のデータが必要です。
+            JSON構造は<code>jQuery.extend</code>によってグリッドにマージされます。
+            これにより、サーバから返ってきたプロパティを適用することができます。
+          </p>
+          <pre><code class="json">{
+    &#x22;status&#x22;  : &#x22;success&#x22;,
+    &#x22;total&#x22;   : 36,
+    &#x22;records&#x22; : [
+        { &#x22;recid&#x22;: 1, &#x22;field-1&#x22;: &#x22;value-1&#x22;, ... &#x22;field-N&#x22;: &#x22;value-N&#x22; },
+        ...
+        { &#x22;recid&#x22;: N, &#x22;field-1&#x22;: &#x22;value-1&#x22;, ... &#x22;field-N&#x22;: &#x22;value-N&#x22; }
+    ]
+}</code></pre><br>
+          <p>サーバがJSONでないデータ(例えばXML)を返す場合でも、<a href="./events/onRequest.html"><code>.onRequest</code></a>メソッドや、<a href="./events/onLoad.html"><code>.onLoad</code></a>メソッドを使ってデータ変換することができます。
+            もしサーバサイドからエラーを返したい場合は以下のように指定します。
+          </p>
+          <pre><code class="json">{
+    &#x22;status&#x22;  : &#x22;error&#x22;,
+    &#x22;message&#x22; : &#x22;Error Message&#x22;
+}</code></pre><br><br>
+          <h3>レコード削除</h3>
+          <p>いくつかのレコードを選択してツールバーの「delete」ボタンをクリックしたり、<a href="./methods/delete.html"><code>.delete()</code></a>メソッドを呼んだ時のように、レコード削除をリクエストする場合、
+            送信パラメータは以下のように指定します。
+          </p>
+          <pre><code class="json">{
+    &#x22;cmd&#x22;      : &#x22;delete-records&#x22;,
+    &#x22;selected&#x22; : [1, 2],
+}</code></pre><br>
+          <p>
+            削除に直接関係の無い他のフィールドも送信します。
+            もしエラーが無ければ、レスポンスは以下のように指定します。
+          </p>
+          <pre><code class="json">{
+    &#x22;status&#x22; : &#x22;success&#x22;
+}</code></pre><br>
+          <p>
+            そして、レスポンスを受けたらすぐに、レコードを更新するための2番目のリクエストを送信します。
+            もしサーバから以下のレスポンスが来た場合、グリッドはエラーを表示します。レコードは更新しません。
+          </p>
+          <pre><code class="json">{
+    &#x22;status&#x22;  : &#x22;error&#x22;,
+    &#x22;message&#x22; : &#x22;Error Message&#x22;
+}</code></pre><br><br>
+          <h3>レコード保存</h3>
+          <p>
+            インライン編集をオンにすると、データ変更をすることができます。
+            ユーザーがデータを編集して「Save」ボタンをクリックしたら、以下のパラメータを送信します。
+          </p>
+          <pre><code class="json">{
+    &#x22;cmd&#x22;     : &#x22;save-records&#x22;,
+    &#x22;changes&#x22; : [],
+}</code></pre><br>
+          <p>
+            変更箇所は変更されたレコードのキーと値を持った配列です。
+            もしエラーが無ければ、レスポンスは以下のように指定します。
+          </p>
+          <pre><code class="json">{
+    &#x22;status&#x22;: &#x22;success&#x22;
+}</code></pre><br>
+          <p>もし以下のレスポンスが来た場合、エラーを表示します。</p>
+          <pre><code class="json">{
+    &#x22;status&#x22;  : &#x22;error&#x22;,
+    &#x22;message&#x22; : &#x22;Error Message&#x22;
+}</code></pre>
+          <div class="license">
+            <p>&copy; 2017. <img src="./img/email.png">.<br> Code licensed under the<a href="http://en.wikipedia.org/wiki/MIT_License" target="_blank">MIT License</a>. Documentation licensed under<a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+            <p>このコンテンツはvitmalinaによる<a href="http://w2ui.com/web/docs/1.5/">w2ui.gridドキュメント</a>を翻訳/改変したものです。</p>
+            <style>
+              .license img {
+                vertical-align: middle;
+              }
+            </style>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer><span>
+       &copy; 
+      <script>document.write((new Date()).getFullYear());</script> tobijibu</span></footer>
+  <script src="./js/main.js"></script>
+  <script src="./js/barba_common.js"></script>
+</body>
