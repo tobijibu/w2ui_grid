@@ -42,252 +42,336 @@
       navi_icon.classList.toggle('active');
     }
   </script>
-  <div id="barba-wrapper">
-    <div class="barba-container">
-      <div class="wrapper">
-        <div class="navi">
-          <ul>
-            <li><a href="../">Home</a></li>
-            <li><a href="../overview.html">Overview</a></li>
-            <li><span onclick="toggleEvents()">Events</span>
-              <ul class="hidden" id="navi_events">
-                <li>Events
-                  <ul>
-                    <li class="onAdd"><a href="../events/onAdd.html">onAdd</a></li>
-                    <li class="onChange"><a href="../events/onChange.html">onChange</a></li>
-                    <li class="onClick"><a href="../events/onClick.html">onClick</a></li>
-                    <li class="onCollapse"><a href="../events/onCollapse.html">onCollapse</a></li>
-                    <li class="onColumnClick"><a href="../events/onColumnClick.html">onColumnClick</a></li>
-                    <li class="onColumnOnOff"><a href="../events/onColumnOnOff.html">onColumnOnOff</a></li>
-                    <li class="onColumnResize"><a href="../events/onColumnResize.html">onColumnResize</a></li>
-                    <li class="onContextMenu"><a href="../events/onContextMenu.html">onContextMenu</a></li>
-                    <li class="onCopy"><a href="../events/onCopy.html">onCopy</a></li>
-                    <li class="onDblClick"><a href="../events/onDblClick.html">onDblClick</a></li>
-                    <li class="onDelete"><a href="../events/onDelete.html">onDelete</a></li>
-                    <li class="onEdit"><a href="../events/onEdit.html">onEdit</a></li>
-                    <li class="onEditField"><a href="../events/onEditField.html">onEditField</a></li>
-                    <li class="onError"><a href="../events/onError.html">onError</a></li>
-                    <li class="onExpand"><a href="../events/onExpand.html">onExpand</a></li>
-                    <li class="onKeydown"><a href="../events/onKeydown.html">onKeydown</a></li>
-                    <li class="onLoad"><a href="../events/onLoad.html">onLoad</a></li>
-                    <li class="onMenuClick"><a href="../events/onMenuClick.html">onMenuClick</a></li>
-                    <li class="onPaste"><a href="../events/onPaste.html">onPaste</a></li>
-                    <li class="onReload"><a href="../events/onReload.html">onReload</a></li>
-                    <li class="onRequest"><a href="../events/onRequest.html">onRequest</a></li>
-                    <li class="onRestore"><a href="../events/onRestore.html">onRestore</a></li>
-                    <li class="onSave"><a href="../events/onSave.html">onSave</a></li>
-                    <li class="onSearch"><a href="../events/onSearch.html">onSearch</a></li>
-                    <li class="onSelect"><a href="../events/onSelect.html">onSelect</a></li>
-                    <li class="onSelectionExtend"><a href="../events/onSelectionExtend.html">onSelectionExtend</a></li>
-                    <li class="onSort"><a href="../events/onSort.html">onSort</a></li>
-                    <li class="onStateRestore"><a href="../events/onStateRestore.html">onStateRestore</a></li>
-                    <li class="onStateSave"><a href="../events/onStateSave.html">onStateSave</a></li>
-                    <li class="onSubmit"><a href="../events/onSubmit.html">onSubmit</a></li>
-                    <li class="onToolbar"><a href="../events/onToolbar.html">onToolbar</a></li>
-                    <li class="onUnselect"><a href="../events/onUnselect.html">onUnselect</a></li>
-                  </ul>
-                </li>
-                <li>CommonEvents
-                  <ul>
-                    <li class="onDestroy"><a class="no-barba" href="../../w2ui_utils/events/onDestroy.html">onDestroy</a></li>
-                    <li class="onRefresh"><a class="no-barba" href="../../w2ui_utils/events/onRefresh.html">onRefresh</a></li>
-                    <li class="onRender"><a class="no-barba" href="../../w2ui_utils/events/onRender.html">onRender</a></li>
-                    <li class="onResize"><a class="no-barba" href="../../w2ui_utils/events/onResize.html">onResize</a></li>
-                  </ul>
-                </li>
+  <div class="wrapper">
+    <div class="navi">
+      <ul class="menu">
+        <li><a class="index" href="../index.html">Home</a></li>
+        <li><a class="overview" href="../overview.html">Overview</a></li>
+        <li><span onclick="toggleEvents()">Events</span>
+          <ul class="hidden" id="navi_events">
+            <li>Events
+              <ul>
+                <li><a href="../events/onAdd.html">onAdd</a></li>
+                <li><a href="../events/onChange.html">onChange</a></li>
+                <li><a href="../events/onClick.html">onClick</a></li>
+                <li><a href="../events/onCollapse.html">onCollapse</a></li>
+                <li><a href="../events/onColumnClick.html">onColumnClick</a></li>
+                <li><a href="../events/onColumnOnOff.html">onColumnOnOff</a></li>
+                <li><a href="../events/onColumnResize.html">onColumnResize</a></li>
+                <li><a href="../events/onContextMenu.html">onContextMenu</a></li>
+                <li><a href="../events/onCopy.html">onCopy</a></li>
+                <li><a href="../events/onDblClick.html">onDblClick</a></li>
+                <li><a href="../events/onDelete.html">onDelete</a></li>
+                <li><a href="../events/onEdit.html">onEdit</a></li>
+                <li><a href="../events/onEditField.html">onEditField</a></li>
+                <li><a href="../events/onError.html">onError</a></li>
+                <li><a href="../events/onExpand.html">onExpand</a></li>
+                <li><a href="../events/onKeydown.html">onKeydown</a></li>
+                <li><a href="../events/onLoad.html">onLoad</a></li>
+                <li><a href="../events/onMenuClick.html">onMenuClick</a></li>
+                <li><a href="../events/onPaste.html">onPaste</a></li>
+                <li><a href="../events/onReload.html">onReload</a></li>
+                <li><a href="../events/onRequest.html">onRequest</a></li>
+                <li><a href="../events/onRestore.html">onRestore</a></li>
+                <li><a href="../events/onSave.html">onSave</a></li>
+                <li><a href="../events/onSearch.html">onSearch</a></li>
+                <li><a href="../events/onSelect.html">onSelect</a></li>
+                <li><a href="../events/onSelectionExtend.html">onSelectionExtend</a></li>
+                <li><a href="../events/onSort.html">onSort</a></li>
+                <li><a href="../events/onStateRestore.html">onStateRestore</a></li>
+                <li><a href="../events/onStateSave.html">onStateSave</a></li>
+                <li><a href="../events/onSubmit.html">onSubmit</a></li>
+                <li><a href="../events/onToolbar.html">onToolbar</a></li>
+                <li><a href="../events/onUnselect.html">onUnselect</a></li>
               </ul>
             </li>
-            <li><span onclick="toggleProperties()">Properties</span>
-              <ul id="navi_properties">
-                <li>Properties
-                  <ul>
-                    <li class="autoLoad"><a href="../properties/autoLoad.html">autoLoad</a></li>
-                    <li class="buttons"><a href="../properties/buttons.html">buttons</a></li>
-                    <li class="columnGroups"><a href="../properties/columnGroups.html">columnGroups</a></li>
-                    <li class="columns"><a href="../properties/columns.html">columns</a></li>
-                    <li class="fixedBody"><a href="../properties/fixedBody.html">fixedBody</a></li>
-                    <li class="header"><a href="../properties/header.html">header</a></li>
-                    <li class="keyboard"><a href="../properties/keyboard.html">keyboard</a></li>
-                    <li class="last"><a class="active" href="../properties/last.html">last</a></li>
-                    <li class="limit"><a href="../properties/limit.html">limit</a></li>
-                    <li class="markSearch"><a href="../properties/markSearch.html">markSearch</a></li>
-                    <li class="menu"><a href="../properties/menu.html">menu</a></li>
-                    <li class="method"><a href="../properties/method.html">method</a></li>
-                    <li class="msgAJAXerror"><a href="../properties/msgAJAXerror.html">msgAJAXerror</a></li>
-                    <li class="msgDelete"><a href="../properties/msgDelete.html">msgDelete</a></li>
-                    <li class="msgNotJSON"><a href="../properties/msgNotJSON.html">msgNotJSON</a></li>
-                    <li class="msgRefresh"><a href="../properties/msgRefresh.html">msgRefresh</a></li>
-                    <li class="multiSearch"><a href="../properties/multiSearch.html">multiSearch</a></li>
-                    <li class="multiSelect"><a href="../properties/multiSelect.html">multiSelect</a></li>
-                    <li class="multiSort"><a href="../properties/multiSort.html">multiSort</a></li>
-                    <li class="offset"><a href="../properties/offset.html">offset</a></li>
-                    <li class="parser"><a href="../properties/parser.html">parser</a></li>
-                    <li class="postData"><a href="../properties/postData.html">postData</a></li>
-                    <li class="ranges"><a href="../properties/ranges.html">ranges</a></li>
-                    <li class="recid"><a href="../properties/recid.html">recid</a></li>
-                    <li class="recordHeight"><a href="../properties/recordHeight.html">recordHeight</a></li>
-                    <li class="records"><a href="../properties/records.html">records</a></li>
-                    <li class="reorderColumns"><a href="../properties/reorderColumns.html">reorderColumns</a></li>
-                    <li class="reorderRows"><a href="../properties/reorderRows.html">reorderRows</a></li>
-                    <li class="routeData"><a href="../properties/routeData.html">routeData</a></li>
-                    <li class="searchData"><a href="../properties/searchData.html">searchData</a></li>
-                    <li class="searches"><a href="../properties/searches.html">searches</a></li>
-                    <li class="selectType"><a href="../properties/selectType.html">selectType</a></li>
-                    <li class="show"><a href="../properties/show.html">show</a></li>
-                    <li class="sortData"><a href="../properties/sortData.html">sortData</a></li>
-                    <li class="summary"><a href="../properties/summary.html">summary</a></li>
-                    <li class="toolbar"><a href="../properties/toolbar.html">toolbar</a></li>
-                    <li class="total"><a href="../properties/total.html">total</a></li>
-                    <li class="url"><a href="../properties/url.html">url</a></li>
-                  </ul>
-                </li>
-                <li>CommonProperties
-                  <ul>
-                    <li class="box"><a class="no-barba" href="../../w2ui_utils/properties/box.html">box</a></li>
-                    <li class="handlers"><a class="no-barba" href="../../w2ui_utils/properties/handlers.html">handlers</a></li>
-                    <li class="name"><a class="no-barba" href="../../w2ui_utils/properties/name.html">name</a></li>
-                    <li class="style"><a class="no-barba" href="../../w2ui_utils/properties/style.html">style</a></li>
-                  </ul>
-                </li>
+            <li>CommonEvents
+              <ul>
+                <li><a class="no-barba" href="../../w2ui_utils/events/onDestroy.html">onDestroy</a></li>
+                <li><a class="no-barba" href="../../w2ui_utils/events/onRefresh.html">onRefresh</a></li>
+                <li><a class="no-barba" href="../../w2ui_utils/events/onRender.html">onRender</a></li>
+                <li><a class="no-barba" href="../../w2ui_utils/events/onResize.html">onResize</a></li>
               </ul>
-            </li>
-            <li><span onclick="toggleMethods()">Methods</span>
-              <ul class="hidden" id="navi_methods">
-                <li>Methods
-                  <ul>
-                    <li class="add"><a href="../methods/add.html">add</a></li>
-                    <li class="addColumn"><a href="../methods/addColumn.html">addColumn</a></li>
-                    <li class="addRange"><a href="../methods/addRange.html">addRange</a></li>
-                    <li class="addSearch"><a href="../methods/addSearch.html">addSearch</a></li>
-                    <li class="clear"><a href="../methods/clear.html">clear</a></li>
-                    <li class="click"><a href="../methods/click.html">click</a></li>
-                    <li class="collapse"><a href="../methods/collapse.html">collapse</a></li>
-                    <li class="columnClick"><a href="../methods/columnClick.html">columnClick</a></li>
-                    <li class="columnOnOff"><a href="../methods/columnOnOff.html">columnOnOff</a></li>
-                    <li class="contextMenu"><a href="../methods/contextMenu.html">contextMenu</a></li>
-                    <li class="copy"><a href="../methods/copy.html">copy</a></li>
-                    <li class="dblClick"><a href="../methods/dblClick.html">dblClick</a></li>
-                    <li class="delete"><a href="../methods/delete.html">delete</a></li>
-                    <li class="editField"><a href="../methods/editField.html">editField</a></li>
-                    <li class="error"><a href="../methods/error.html">error</a></li>
-                    <li class="expand"><a href="../methods/expand.html">expand</a></li>
-                    <li class="find"><a href="../methods/find.html">find</a></li>
-                    <li class="get"><a href="../methods/get.html">get</a></li>
-                    <li class="getCellHTML"><a href="../methods/getCellHTML.html">getCellHTML</a></li>
-                    <li class="getCellValue"><a href="../methods/getCellValue.html">getCellValue</a></li>
-                    <li class="getChanges"><a href="../methods/getChanges.html">getChanges</a></li>
-                    <li class="getColumn"><a href="../methods/getColumn.html">getColumn</a></li>
-                    <li class="getColumnsHTML"><a href="../methods/getColumnsHTML.html">getColumnsHTML</a></li>
-                    <li class="getFooterHTML"><a href="../methods/getFooterHTML.html">getFooterHTML</a></li>
-                    <li class="getRangeData"><a href="../methods/getRangeData.html">getRangeData</a></li>
-                    <li class="getRecordHTML"><a href="../methods/getRecordHTML.html">getRecordHTML</a></li>
-                    <li class="getRecordsHTML"><a href="../methods/getRecordsHTML.html">getRecordsHTML</a></li>
-                    <li class="getSearch"><a href="../methods/getSearch.html">getSearch</a></li>
-                    <li class="getSearchData"><a href="../methods/getSearchData.html">getSearchData</a></li>
-                    <li class="getSearchesHTML"><a href="../methods/getSearchesHTML.html">getSearchesHTML</a></li>
-                    <li class="getSelection"><a href="../methods/getSelection.html">getSelection</a></li>
-                    <li class="getSummaryHTML"><a href="../methods/getSummaryHTML.html">getSummaryHTML</a></li>
-                    <li class="hideColumn"><a href="../methods/hideColumn.html">hideColumn</a></li>
-                    <li class="hideSearch"><a href="../methods/hideSearch.html">hideSearch</a></li>
-                    <li class="initAllField"><a href="../methods/initAllField.html">initAllField</a></li>
-                    <li class="initColumnOnOff"><a href="../methods/initColumnOnOff.html">initColumnOnOff</a></li>
-                    <li class="initOperator"><a href="../methods/initOperator.html">initOperator</a></li>
-                    <li class="initResize"><a href="../methods/initResize.html">initResize</a></li>
-                    <li class="initSearches"><a href="../methods/initSearches.html">initSearches</a></li>
-                    <li class="initToolbar"><a href="../methods/initToolbar.html">initToolbar</a></li>
-                    <li class="keydown"><a href="../methods/keydown.html">keydown</a></li>
-                    <li class="load"><a href="../methods/load.html">load</a></li>
-                    <li class="localSearch"><a href="../methods/localSearch.html">localSearch</a></li>
-                    <li class="localSort"><a href="../methods/localSort.html">localSort</a></li>
-                    <li class="lock"><a href="../methods/lock.html">lock</a></li>
-                    <li class="menuClick"><a href="../methods/menuClick.html">menuClick</a></li>
-                    <li class="mergeChanges"><a href="../methods/mergeChanges.html">mergeChanges</a></li>
-                    <li class="nextCell"><a href="../methods/nextCell.html">nextCell</a></li>
-                    <li class="nextRow"><a href="../methods/nextRow.html">nextRow</a></li>
-                    <li class="parseField"><a href="../methods/parseField.html">parseField</a></li>
-                    <li class="paste"><a href="../methods/paste.html">paste</a></li>
-                    <li class="prevCell"><a href="../methods/prevCell.html">prevCell</a></li>
-                    <li class="prevRow"><a href="../methods/prevRow.html">prevRow</a></li>
-                    <li class="refreshCell"><a href="../methods/refreshCell.html">refreshCell</a></li>
-                    <li class="refreshRanges"><a href="../methods/refreshRanges.html">refreshRanges</a></li>
-                    <li class="refreshRow"><a href="../methods/refreshRow.html">refreshRow</a></li>
-                    <li class="reload"><a href="../methods/reload.html">reload</a></li>
-                    <li class="remove"><a href="../methods/remove.html">remove</a></li>
-                    <li class="removeColumn"><a href="../methods/removeColumn.html">removeColumn</a></li>
-                    <li class="removeRange"><a href="../methods/removeRange.html">removeRange</a></li>
-                    <li class="removeSearch"><a href="../methods/removeSearch.html">removeSearch</a></li>
-                    <li class="request"><a href="../methods/request.html">request</a></li>
-                    <li class="requestComplete"><a href="../methods/requestComplete.html">requestComplete</a></li>
-                    <li class="reset"><a href="../methods/reset.html">reset</a></li>
-                    <li class="resizeBoxes"><a href="../methods/resizeBoxes.html">resizeBoxes</a></li>
-                    <li class="resizeRecords"><a href="../methods/resizeRecords.html">resizeRecords</a></li>
-                    <li class="save"><a href="../methods/save.html">save</a></li>
-                    <li class="scroll"><a href="../methods/scroll.html">scroll</a></li>
-                    <li class="scrollIntoView"><a href="../methods/scrollIntoView.html">scrollIntoView</a></li>
-                    <li class="search"><a href="../methods/search.html">search</a></li>
-                    <li class="searchClose"><a href="../methods/searchClose.html">searchClose</a></li>
-                    <li class="searchOpen"><a href="../methods/searchOpen.html">searchOpen</a></li>
-                    <li class="searchReset"><a href="../methods/searchReset.html">searchReset</a></li>
-                    <li class="searchShowFields"><a href="../methods/searchShowFields.html">searchShowFields</a></li>
-                    <li class="select"><a href="../methods/select.html">select</a></li>
-                    <li class="selectAll"><a href="../methods/selectAll.html">selectAll</a></li>
-                    <li class="selectNone"><a href="../methods/selectNone.html">selectNone</a></li>
-                    <li class="set"><a href="../methods/set.html">set</a></li>
-                    <li class="showColumn"><a href="../methods/showColumn.html">showColumn</a></li>
-                    <li class="showSearch"><a href="../methods/showSearch.html">showSearch</a></li>
-                    <li class="skip"><a href="../methods/skip.html">skip</a></li>
-                    <li class="sort"><a href="../methods/sort.html">sort</a></li>
-                    <li class="stateReset"><a href="../methods/stateReset.html">stateReset</a></li>
-                    <li class="stateRestore"><a href="../methods/stateRestore.html">stateRestore</a></li>
-                    <li class="stateSave"><a href="../methods/stateSave.html">stateSave</a></li>
-                    <li class="status"><a href="../methods/status.html">status</a></li>
-                    <li class="toggle"><a href="../methods/toggle.html">toggle</a></li>
-                    <li class="toggleColumn"><a href="../methods/toggleColumn.html">toggleColumn</a></li>
-                    <li class="toggleSearch"><a href="../methods/toggleSearch.html">toggleSearch</a></li>
-                    <li class="toolbarAdd"><a href="../methods/toolbarAdd.html">toolbarAdd</a></li>
-                    <li class="toolbarDelete"><a href="../methods/toolbarDelete.html">toolbarDelete</a></li>
-                    <li class="unlock"><a href="../methods/unlock.html">unlock</a></li>
-                    <li class="unselect"><a href="../methods/unselect.html">unselect</a></li>
-                  </ul>
-                </li>
-                <li>CommonMethods
-                  <ul>
-                    <li class="destroy"><a class="no-barba" href="../../w2ui_utils/methods/destroy.html">destroy</a></li>
-                    <li class="off"><a class="no-barba" href="../../w2ui_utils/methods/off.html">off</a></li>
-                    <li class="on"><a class="no-barba" href="../../w2ui_utils/methods/on.html">on</a></li>
-                    <li class="refresh"><a class="no-barba" href="../../w2ui_utils/methods/refresh.html">refresh</a></li>
-                    <li class="render"><a class="no-barba" href="../../w2ui_utils/methods/render.html">render</a></li>
-                    <li class="resize"><a class="no-barba" href="../../w2ui_utils/methods/resize.html">resize</a></li>
-                    <li class="trigger"><a class="no-barba" href="../../w2ui_utils/methods/trigger.html">trigger</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <hr>
-            <li>HTML Source
-              <div id="navi_source"><a href="https://github.com/tobijibu/w2ui_grid/archive/master.zip"><i class="menu-icon material-icons">&#xE884;</i></a><a href="https://github.com/tobijibu/w2ui_grid/"><i class="menu-icon material-icons">&#xE86F;</i></a></div>
             </li>
           </ul>
-          <script>
-            toggleEvents = function() {
-              let elem = document.getElementById('navi_events');
-              elem.classList.toggle('hidden');
-            }
-            toggleProperties = function() {
-              let elem = document.getElementById('navi_properties');
-              elem.classList.toggle('hidden');
-            }
-            toggleMethods = function() {
-              let elem = document.getElementById('navi_methods');
-              elem.classList.toggle('hidden');
-            }
-          </script>
-        </div>
+        </li>
+        <li><span onclick="toggleProperties()">Properties</span>
+          <ul id="navi_properties">
+            <li>Properties
+              <ul>
+                <li><a href="../properties/autoLoad.html">autoLoad</a></li>
+                <li><a href="../properties/buttons.html">buttons</a></li>
+                <li><a href="../properties/columnGroups.html">columnGroups</a></li>
+                <li><a href="../properties/columns.html">columns</a></li>
+                <li><a href="../properties/fixedBody.html">fixedBody</a></li>
+                <li><a href="../properties/header.html">header</a></li>
+                <li><a href="../properties/keyboard.html">keyboard</a></li>
+                <li><a class="active" href="../properties/last.html">last</a></li>
+                <li><a href="../properties/limit.html">limit</a></li>
+                <li><a href="../properties/markSearch.html">markSearch</a></li>
+                <li><a href="../properties/menu.html">menu</a></li>
+                <li><a href="../properties/method.html">method</a></li>
+                <li><a href="../properties/msgAJAXerror.html">msgAJAXerror</a></li>
+                <li><a href="../properties/msgDelete.html">msgDelete</a></li>
+                <li><a href="../properties/msgNotJSON.html">msgNotJSON</a></li>
+                <li><a href="../properties/msgRefresh.html">msgRefresh</a></li>
+                <li><a href="../properties/multiSearch.html">multiSearch</a></li>
+                <li><a href="../properties/multiSelect.html">multiSelect</a></li>
+                <li><a href="../properties/multiSort.html">multiSort</a></li>
+                <li><a href="../properties/offset.html">offset</a></li>
+                <li><a href="../properties/parser.html">parser</a></li>
+                <li><a href="../properties/postData.html">postData</a></li>
+                <li><a href="../properties/ranges.html">ranges</a></li>
+                <li><a href="../properties/recid.html">recid</a></li>
+                <li><a href="../properties/recordHeight.html">recordHeight</a></li>
+                <li><a href="../properties/records.html">records</a></li>
+                <li><a href="../properties/reorderColumns.html">reorderColumns</a></li>
+                <li><a href="../properties/reorderRows.html">reorderRows</a></li>
+                <li><a href="../properties/routeData.html">routeData</a></li>
+                <li><a href="../properties/searchData.html">searchData</a></li>
+                <li><a href="../properties/searches.html">searches</a></li>
+                <li><a href="../properties/selectType.html">selectType</a></li>
+                <li><a href="../properties/show.html">show</a></li>
+                <li><a href="../properties/sortData.html">sortData</a></li>
+                <li><a href="../properties/summary.html">summary</a></li>
+                <li><a href="../properties/toolbar.html">toolbar</a></li>
+                <li><a href="../properties/total.html">total</a></li>
+                <li><a href="../properties/url.html">url</a></li>
+              </ul>
+            </li>
+            <li>CommonProperties
+              <ul>
+                <li><a class="no-barba" href="../../w2ui_utils/properties/box.html">box</a></li>
+                <li><a class="no-barba" href="../../w2ui_utils/properties/handlers.html">handlers</a></li>
+                <li><a class="no-barba" href="../../w2ui_utils/properties/name.html">name</a></li>
+                <li><a class="no-barba" href="../../w2ui_utils/properties/style.html">style</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><span onclick="toggleMethods()">Methods</span>
+          <ul class="hidden" id="navi_methods">
+            <li>Methods
+              <ul>
+                <li><a href="../methods/add.html">add</a></li>
+                <li><a href="../methods/addColumn.html">addColumn</a></li>
+                <li><a href="../methods/addRange.html">addRange</a></li>
+                <li><a href="../methods/addSearch.html">addSearch</a></li>
+                <li><a href="../methods/clear.html">clear</a></li>
+                <li><a href="../methods/click.html">click</a></li>
+                <li><a href="../methods/collapse.html">collapse</a></li>
+                <li><a href="../methods/columnClick.html">columnClick</a></li>
+                <li><a href="../methods/columnOnOff.html">columnOnOff</a></li>
+                <li><a href="../methods/contextMenu.html">contextMenu</a></li>
+                <li><a href="../methods/copy.html">copy</a></li>
+                <li><a href="../methods/dblClick.html">dblClick</a></li>
+                <li><a href="../methods/delete.html">delete</a></li>
+                <li><a href="../methods/editField.html">editField</a></li>
+                <li><a href="../methods/error.html">error</a></li>
+                <li><a href="../methods/expand.html">expand</a></li>
+                <li><a href="../methods/find.html">find</a></li>
+                <li><a href="../methods/get.html">get</a></li>
+                <li><a href="../methods/getCellHTML.html">getCellHTML</a></li>
+                <li><a href="../methods/getCellValue.html">getCellValue</a></li>
+                <li><a href="../methods/getChanges.html">getChanges</a></li>
+                <li><a href="../methods/getColumn.html">getColumn</a></li>
+                <li><a href="../methods/getColumnsHTML.html">getColumnsHTML</a></li>
+                <li><a href="../methods/getFooterHTML.html">getFooterHTML</a></li>
+                <li><a href="../methods/getRangeData.html">getRangeData</a></li>
+                <li><a href="../methods/getRecordHTML.html">getRecordHTML</a></li>
+                <li><a href="../methods/getRecordsHTML.html">getRecordsHTML</a></li>
+                <li><a href="../methods/getSearch.html">getSearch</a></li>
+                <li><a href="../methods/getSearchData.html">getSearchData</a></li>
+                <li><a href="../methods/getSearchesHTML.html">getSearchesHTML</a></li>
+                <li><a href="../methods/getSelection.html">getSelection</a></li>
+                <li><a href="../methods/getSummaryHTML.html">getSummaryHTML</a></li>
+                <li><a href="../methods/hideColumn.html">hideColumn</a></li>
+                <li><a href="../methods/hideSearch.html">hideSearch</a></li>
+                <li><a href="../methods/initAllField.html">initAllField</a></li>
+                <li><a href="../methods/initColumnOnOff.html">initColumnOnOff</a></li>
+                <li><a href="../methods/initOperator.html">initOperator</a></li>
+                <li><a href="../methods/initResize.html">initResize</a></li>
+                <li><a href="../methods/initSearches.html">initSearches</a></li>
+                <li><a href="../methods/initToolbar.html">initToolbar</a></li>
+                <li><a href="../methods/keydown.html">keydown</a></li>
+                <li><a href="../methods/load.html">load</a></li>
+                <li><a href="../methods/localSearch.html">localSearch</a></li>
+                <li><a href="../methods/localSort.html">localSort</a></li>
+                <li><a href="../methods/lock.html">lock</a></li>
+                <li><a href="../methods/menuClick.html">menuClick</a></li>
+                <li><a href="../methods/mergeChanges.html">mergeChanges</a></li>
+                <li><a href="../methods/nextCell.html">nextCell</a></li>
+                <li><a href="../methods/nextRow.html">nextRow</a></li>
+                <li><a href="../methods/parseField.html">parseField</a></li>
+                <li><a href="../methods/paste.html">paste</a></li>
+                <li><a href="../methods/prevCell.html">prevCell</a></li>
+                <li><a href="../methods/prevRow.html">prevRow</a></li>
+                <li><a href="../methods/refreshCell.html">refreshCell</a></li>
+                <li><a href="../methods/refreshRanges.html">refreshRanges</a></li>
+                <li><a href="../methods/refreshRow.html">refreshRow</a></li>
+                <li><a href="../methods/reload.html">reload</a></li>
+                <li><a href="../methods/remove.html">remove</a></li>
+                <li><a href="../methods/removeColumn.html">removeColumn</a></li>
+                <li><a href="../methods/removeRange.html">removeRange</a></li>
+                <li><a href="../methods/removeSearch.html">removeSearch</a></li>
+                <li><a href="../methods/request.html">request</a></li>
+                <li><a href="../methods/requestComplete.html">requestComplete</a></li>
+                <li><a href="../methods/reset.html">reset</a></li>
+                <li><a href="../methods/resizeBoxes.html">resizeBoxes</a></li>
+                <li><a href="../methods/resizeRecords.html">resizeRecords</a></li>
+                <li><a href="../methods/save.html">save</a></li>
+                <li><a href="../methods/scroll.html">scroll</a></li>
+                <li><a href="../methods/scrollIntoView.html">scrollIntoView</a></li>
+                <li><a href="../methods/search.html">search</a></li>
+                <li><a href="../methods/searchClose.html">searchClose</a></li>
+                <li><a href="../methods/searchOpen.html">searchOpen</a></li>
+                <li><a href="../methods/searchReset.html">searchReset</a></li>
+                <li><a href="../methods/searchShowFields.html">searchShowFields</a></li>
+                <li><a href="../methods/select.html">select</a></li>
+                <li><a href="../methods/selectAll.html">selectAll</a></li>
+                <li><a href="../methods/selectNone.html">selectNone</a></li>
+                <li><a href="../methods/set.html">set</a></li>
+                <li><a href="../methods/showColumn.html">showColumn</a></li>
+                <li><a href="../methods/showSearch.html">showSearch</a></li>
+                <li><a href="../methods/skip.html">skip</a></li>
+                <li><a href="../methods/sort.html">sort</a></li>
+                <li><a href="../methods/stateReset.html">stateReset</a></li>
+                <li><a href="../methods/stateRestore.html">stateRestore</a></li>
+                <li><a href="../methods/stateSave.html">stateSave</a></li>
+                <li><a href="../methods/status.html">status</a></li>
+                <li><a href="../methods/toggle.html">toggle</a></li>
+                <li><a href="../methods/toggleColumn.html">toggleColumn</a></li>
+                <li><a href="../methods/toggleSearch.html">toggleSearch</a></li>
+                <li><a href="../methods/toolbarAdd.html">toolbarAdd</a></li>
+                <li><a href="../methods/toolbarDelete.html">toolbarDelete</a></li>
+                <li><a href="../methods/unlock.html">unlock</a></li>
+                <li><a href="../methods/unselect.html">unselect</a></li>
+              </ul>
+            </li>
+            <li>CommonMethods
+              <ul>
+                <li><a class="no-barba" href="../../w2ui_utils/methods/destroy.html">destroy</a></li>
+                <li><a class="no-barba" href="../../w2ui_utils/methods/off.html">off</a></li>
+                <li><a class="no-barba" href="../../w2ui_utils/methods/on.html">on</a></li>
+                <li><a class="no-barba" href="../../w2ui_utils/methods/refresh.html">refresh</a></li>
+                <li><a class="no-barba" href="../../w2ui_utils/methods/render.html">render</a></li>
+                <li><a class="no-barba" href="../../w2ui_utils/methods/resize.html">resize</a></li>
+                <li><a class="no-barba" href="../../w2ui_utils/methods/trigger.html">trigger</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <hr>
+      <ul>
+        <li>HTML Source
+          <div id="navi_source"><a href="https://github.com/tobijibu/undefinedarchive/master.zip"><i class="menu-icon material-icons">&#xE884;</i></a><a href="https://github.com/tobijibu/undefined"><i class="menu-icon material-icons">&#xE86F;</i></a></div>
+        </li>
+      </ul>
+      <div id="gcs" data-id="017083506626304158170:shgf0rodeqk">
+        <script>
+          (function() {
+            var cx = document.getElementById('gcs').getAttribute('data-id');
+            var gcse = document.createElement('script');
+            gcse.type = 'text/javascript';
+            gcse.async = true;
+            gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(gcse, s);
+          })();
+        </script>
+        <gcse:search linkTarget=""></gcse:search>
+      </div>
+      <style>
+        .cse .gsc-control-cse,
+        .gsc-control-cse {
+          border: 0px solid #fff;
+          padding: 0;
+        }
+        /* 検索ボックス */
+        .gsc-input-box {
+          border: 0px solid #fff;
+          border-bottom: 1px solid #000;
+        }
+        .gsc-search-box-tools .gsc-search-box .gsc-input {
+          padding-right: 0px;
+        }
+        .gsc-search-box .gsc-input>input:hover,
+        .gsc-input-box-hover {
+          border: 1px solid #fff;
+          border-bottom: 1px solid #333;
+          border-top-color: #fff;
+          -moz-box-shadow: none;
+          -webkit-box-shadow: none;
+          box-shadow: none;
+        }
+        .gsc-search-box .gsc-input>input:focus,
+        .gsc-input-box-focus {
+          border: 1px solid #fff;
+          border-bottom: 1px solid #333;
+          -moz-box-shadow: none;
+          -webkit-box-shadow: none;
+          box-shadow: none;
+        }
+        .gsib_a {
+          padding-top: 2px;
+        }
+        .gsst_a .gscb_a {
+          color: #aaa;
+        }
+        /* 検索ボタン */
+        input.gsc-search-button {
+          margin-left: 0;
+        }
+        .cse .gsc-search-button input.gsc-search-button-v2,
+        input.gsc-search-button-v2 {
+          padding: 6px;
+          margin-top: 5px;
+        }
+        .cse input.gsc-search-button,
+        input.gsc-search-button {
+          color: #fff;
+          border: 1px solid #000;
+          border-radius: 0;
+          -moz-border-radius: 0;
+          -webkit-border-radius: 0;
+          background-color: #000;
+          background-image: none;
+          filter: none;
+          transition: .4s;
+        }
+        .cse input.gsc-search-button:hover,
+        input.gsc-search-button:hover {
+          color: #333;
+          border-color: #333;
+          background-color: #333;
+          background-image: none;
+          filter: none;
+          transition: .4s;
+        }
+      </style>
+      <script>
+        toggleEvents = function() {
+          let elem = document.getElementById('navi_events');
+          elem.classList.toggle('hidden');
+        }
+        toggleProperties = function() {
+          let elem = document.getElementById('navi_properties');
+          elem.classList.toggle('hidden');
+        }
+        toggleMethods = function() {
+          let elem = document.getElementById('navi_methods');
+          elem.classList.toggle('hidden');
+        }
+      </script>
+    </div>
+    <div id="barba-wrapper">
+      <div class="barba-container">
         <div class="main">
           <h1>w2grid.last</h1>
           <p>グリッドの内部変数</p>
           <pre><code class="js">Object, default see below</code></pre><br>
-          <p>グリッドはスクロール位置や、検索フィールドの値など、<a href="../../w2ui_utils/methods/refresh.html"><code>w2utils.refresh()</code></a>メソッドに必要な様々な内部変数を持っています。
+          <p>グリッドはスクロール位置や、検索フィールドの値など、<a class="no-barba" href="../../w2ui_utils/methods/refresh.html"><code>w2utils.refresh()</code></a>メソッドに必要な様々な内部変数を持っています。
             このプロパティは内部的に使用されますが、コード内で利用することも可能です。
             オブジェクトの構造は以下のとおりです。
           </p>
