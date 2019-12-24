@@ -1,13 +1,295 @@
-<!DOCTYPE html><html lang="ja"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><title>w2grid.getCellValue | w2ui.grid - にほんご。</title><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta property="og:title" content="w2grid.getCellValue | w2ui.grid - にほんご。"><meta property="og:url"><meta property="og:type" content="article"><link rel="icon" href="https://tr.you84815.space/w2ui_grid/favicon.ico"><link rel="stylesheet" href="../css/main.css"><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-ga('create', 'UA-106478577-1', 'auto');</script></head><body><div id="container"><header><div class="icon"><a class="no-barba" href="https://tr.you84815.space/"><svg width="16" height="16"><rect width="16" height="16" fill="#e0e0e0"></rect></svg></a></div><div class="navi_toggle" onclick="toggleMenu()"><svg id="menu_close" width="24" height="24" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg><svg id="menu_open" width="24" height="24" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg></div><div class="title">w2ui.grid - <a class="no-barba" href="https://tr.you84815.space/">にほんご。</a></div></header><div class="navi" id="navi"><ul class="menu"><li><a class="index" href="../index.html">Home</a></li><li><a class="overview" href="../overview.html">Overview</a></li><li><span onclick="toggleNaviSubMenu('navi_events')">Events</span><ul class="hidden" id="navi_events"><li>Events<ul><li><a href="../events/onAdd.html">onAdd</a></li><li><a href="../events/onChange.html">onChange</a></li><li><a href="../events/onClick.html">onClick</a></li><li><a href="../events/onCollapse.html">onCollapse</a></li><li><a href="../events/onColumnClick.html">onColumnClick</a></li><li><a href="../events/onColumnOnOff.html">onColumnOnOff</a></li><li><a href="../events/onColumnResize.html">onColumnResize</a></li><li><a href="../events/onContextMenu.html">onContextMenu</a></li><li><a href="../events/onCopy.html">onCopy</a></li><li><a href="../events/onDblClick.html">onDblClick</a></li><li><a href="../events/onDelete.html">onDelete</a></li><li><a href="../events/onEdit.html">onEdit</a></li><li><a href="../events/onEditField.html">onEditField</a></li><li><a href="../events/onError.html">onError</a></li><li><a href="../events/onExpand.html">onExpand</a></li><li><a href="../events/onKeydown.html">onKeydown</a></li><li><a href="../events/onLoad.html">onLoad</a></li><li><a href="../events/onMenuClick.html">onMenuClick</a></li><li><a href="../events/onPaste.html">onPaste</a></li><li><a href="../events/onReload.html">onReload</a></li><li><a href="../events/onRequest.html">onRequest</a></li><li><a href="../events/onRestore.html">onRestore</a></li><li><a href="../events/onSave.html">onSave</a></li><li><a href="../events/onSearch.html">onSearch</a></li><li><a href="../events/onSelect.html">onSelect</a></li><li><a href="../events/onSelectionExtend.html">onSelectionExtend</a></li><li><a href="../events/onSort.html">onSort</a></li><li><a href="../events/onStateRestore.html">onStateRestore</a></li><li><a href="../events/onStateSave.html">onStateSave</a></li><li><a href="../events/onSubmit.html">onSubmit</a></li><li><a href="../events/onToolbar.html">onToolbar</a></li><li><a href="../events/onUnselect.html">onUnselect</a></li></ul></li><li>CommonEvents<ul><li><a class="no-barba" href="../../w2ui_utils/events/onDestroy.html">onDestroy</a></li><li><a class="no-barba" href="../../w2ui_utils/events/onRefresh.html">onRefresh</a></li><li><a class="no-barba" href="../../w2ui_utils/events/onRender.html">onRender</a></li><li><a class="no-barba" href="../../w2ui_utils/events/onResize.html">onResize</a></li></ul></li></ul></li><li><span onclick="toggleNaviSubMenu('navi_properties')">Properties</span><ul class="hidden" id="navi_properties"><li>Properties<ul><li><a href="../properties/autoLoad.html">autoLoad</a></li><li><a href="../properties/buttons.html">buttons</a></li><li><a href="../properties/columnGroups.html">columnGroups</a></li><li><a href="../properties/columns.html">columns</a></li><li><a href="../properties/fixedBody.html">fixedBody</a></li><li><a href="../properties/header.html">header</a></li><li><a href="../properties/keyboard.html">keyboard</a></li><li><a href="../properties/last.html">last</a></li><li><a href="../properties/limit.html">limit</a></li><li><a href="../properties/markSearch.html">markSearch</a></li><li><a href="../properties/menu.html">menu</a></li><li><a href="../properties/method.html">method</a></li><li><a href="../properties/msgAJAXerror.html">msgAJAXerror</a></li><li><a href="../properties/msgDelete.html">msgDelete</a></li><li><a href="../properties/msgNotJSON.html">msgNotJSON</a></li><li><a href="../properties/msgRefresh.html">msgRefresh</a></li><li><a href="../properties/multiSearch.html">multiSearch</a></li><li><a href="../properties/multiSelect.html">multiSelect</a></li><li><a href="../properties/multiSort.html">multiSort</a></li><li><a href="../properties/offset.html">offset</a></li><li><a href="../properties/parser.html">parser</a></li><li><a href="../properties/postData.html">postData</a></li><li><a href="../properties/ranges.html">ranges</a></li><li><a href="../properties/recid.html">recid</a></li><li><a href="../properties/recordHeight.html">recordHeight</a></li><li><a href="../properties/records.html">records</a></li><li><a href="../properties/reorderColumns.html">reorderColumns</a></li><li><a href="../properties/reorderRows.html">reorderRows</a></li><li><a href="../properties/routeData.html">routeData</a></li><li><a href="../properties/searchData.html">searchData</a></li><li><a href="../properties/searches.html">searches</a></li><li><a href="../properties/selectType.html">selectType</a></li><li><a href="../properties/show.html">show</a></li><li><a href="../properties/sortData.html">sortData</a></li><li><a href="../properties/summary.html">summary</a></li><li><a href="../properties/toolbar.html">toolbar</a></li><li><a href="../properties/total.html">total</a></li><li><a href="../properties/url.html">url</a></li></ul></li><li>CommonProperties<ul><li><a class="no-barba" href="../../w2ui_utils/properties/box.html">box</a></li><li><a class="no-barba" href="../../w2ui_utils/properties/handlers.html">handlers</a></li><li><a class="no-barba" href="../../w2ui_utils/properties/name.html">name</a></li><li><a class="no-barba" href="../../w2ui_utils/properties/style.html">style</a></li></ul></li></ul></li><li><span onclick="toggleNaviSubMenu('navi_methods')">Methods</span><ul id="navi_methods"><li>Methods<ul><li><a href="../methods/add.html">add</a></li><li><a href="../methods/addColumn.html">addColumn</a></li><li><a href="../methods/addRange.html">addRange</a></li><li><a href="../methods/addSearch.html">addSearch</a></li><li><a href="../methods/clear.html">clear</a></li><li><a href="../methods/click.html">click</a></li><li><a href="../methods/collapse.html">collapse</a></li><li><a href="../methods/columnClick.html">columnClick</a></li><li><a href="../methods/columnOnOff.html">columnOnOff</a></li><li><a href="../methods/contextMenu.html">contextMenu</a></li><li><a href="../methods/copy.html">copy</a></li><li><a href="../methods/dblClick.html">dblClick</a></li><li><a href="../methods/delete.html">delete</a></li><li><a href="../methods/editField.html">editField</a></li><li><a href="../methods/error.html">error</a></li><li><a href="../methods/expand.html">expand</a></li><li><a href="../methods/find.html">find</a></li><li><a href="../methods/get.html">get</a></li><li><a href="../methods/getCellHTML.html">getCellHTML</a></li><li><a class="active" href="../methods/getCellValue.html">getCellValue</a></li><li><a href="../methods/getChanges.html">getChanges</a></li><li><a href="../methods/getColumn.html">getColumn</a></li><li><a href="../methods/getColumnsHTML.html">getColumnsHTML</a></li><li><a href="../methods/getFooterHTML.html">getFooterHTML</a></li><li><a href="../methods/getRangeData.html">getRangeData</a></li><li><a href="../methods/getRecordHTML.html">getRecordHTML</a></li><li><a href="../methods/getRecordsHTML.html">getRecordsHTML</a></li><li><a href="../methods/getSearch.html">getSearch</a></li><li><a href="../methods/getSearchData.html">getSearchData</a></li><li><a href="../methods/getSearchesHTML.html">getSearchesHTML</a></li><li><a href="../methods/getSelection.html">getSelection</a></li><li><a href="../methods/getSummaryHTML.html">getSummaryHTML</a></li><li><a href="../methods/hideColumn.html">hideColumn</a></li><li><a href="../methods/hideSearch.html">hideSearch</a></li><li><a href="../methods/initAllField.html">initAllField</a></li><li><a href="../methods/initColumnOnOff.html">initColumnOnOff</a></li><li><a href="../methods/initOperator.html">initOperator</a></li><li><a href="../methods/initResize.html">initResize</a></li><li><a href="../methods/initSearches.html">initSearches</a></li><li><a href="../methods/initToolbar.html">initToolbar</a></li><li><a href="../methods/keydown.html">keydown</a></li><li><a href="../methods/load.html">load</a></li><li><a href="../methods/localSearch.html">localSearch</a></li><li><a href="../methods/localSort.html">localSort</a></li><li><a href="../methods/lock.html">lock</a></li><li><a href="../methods/menuClick.html">menuClick</a></li><li><a href="../methods/mergeChanges.html">mergeChanges</a></li><li><a href="../methods/nextCell.html">nextCell</a></li><li><a href="../methods/nextRow.html">nextRow</a></li><li><a href="../methods/parseField.html">parseField</a></li><li><a href="../methods/paste.html">paste</a></li><li><a href="../methods/prevCell.html">prevCell</a></li><li><a href="../methods/prevRow.html">prevRow</a></li><li><a href="../methods/refreshCell.html">refreshCell</a></li><li><a href="../methods/refreshRanges.html">refreshRanges</a></li><li><a href="../methods/refreshRow.html">refreshRow</a></li><li><a href="../methods/reload.html">reload</a></li><li><a href="../methods/remove.html">remove</a></li><li><a href="../methods/removeColumn.html">removeColumn</a></li><li><a href="../methods/removeRange.html">removeRange</a></li><li><a href="../methods/removeSearch.html">removeSearch</a></li><li><a href="../methods/request.html">request</a></li><li><a href="../methods/requestComplete.html">requestComplete</a></li><li><a href="../methods/reset.html">reset</a></li><li><a href="../methods/resizeBoxes.html">resizeBoxes</a></li><li><a href="../methods/resizeRecords.html">resizeRecords</a></li><li><a href="../methods/save.html">save</a></li><li><a href="../methods/scroll.html">scroll</a></li><li><a href="../methods/scrollIntoView.html">scrollIntoView</a></li><li><a href="../methods/search.html">search</a></li><li><a href="../methods/searchClose.html">searchClose</a></li><li><a href="../methods/searchOpen.html">searchOpen</a></li><li><a href="../methods/searchReset.html">searchReset</a></li><li><a href="../methods/searchShowFields.html">searchShowFields</a></li><li><a href="../methods/select.html">select</a></li><li><a href="../methods/selectAll.html">selectAll</a></li><li><a href="../methods/selectNone.html">selectNone</a></li><li><a href="../methods/set.html">set</a></li><li><a href="../methods/showColumn.html">showColumn</a></li><li><a href="../methods/showSearch.html">showSearch</a></li><li><a href="../methods/skip.html">skip</a></li><li><a href="../methods/sort.html">sort</a></li><li><a href="../methods/stateReset.html">stateReset</a></li><li><a href="../methods/stateRestore.html">stateRestore</a></li><li><a href="../methods/stateSave.html">stateSave</a></li><li><a href="../methods/status.html">status</a></li><li><a href="../methods/toggle.html">toggle</a></li><li><a href="../methods/toggleColumn.html">toggleColumn</a></li><li><a href="../methods/toggleSearch.html">toggleSearch</a></li><li><a href="../methods/toolbarAdd.html">toolbarAdd</a></li><li><a href="../methods/toolbarDelete.html">toolbarDelete</a></li><li><a href="../methods/unlock.html">unlock</a></li><li><a href="../methods/unselect.html">unselect</a></li></ul></li><li>CommonMethods<ul><li><a class="no-barba" href="../../w2ui_utils/methods/destroy.html">destroy</a></li><li><a class="no-barba" href="../../w2ui_utils/methods/off.html">off</a></li><li><a class="no-barba" href="../../w2ui_utils/methods/on.html">on</a></li><li><a class="no-barba" href="../../w2ui_utils/methods/refresh.html">refresh</a></li><li><a class="no-barba" href="../../w2ui_utils/methods/render.html">render</a></li><li><a class="no-barba" href="../../w2ui_utils/methods/resize.html">resize</a></li><li><a class="no-barba" href="../../w2ui_utils/methods/trigger.html">trigger</a></li></ul></li></ul></li></ul></div><div id="content"><div id="main"><div id="barba-wrapper"><div class="barba-container"><h1>w2grid.getCellValue</h1><div id="update_date"><span>更新日: 2018.09.06
-</span></div><h3>getCellValue(index, column_index, [summary])</h3><p>セルに格納された値を取得します。
-戻り値は<code>string</code>です。</p><dl><dt><b>index</b><span class="type"> : integer</span></dt><dd>レコード配列または、サマリー配列のインデックスを指定します。</dd><dt><b>column_index</b><span class="type"> : integer</span></dt><dd>カラム配列のインデックスを指定します。</dd><dt><b>summary</b><span class="type"> : boolean</span></dt><dd>サマリーを表示するかどうかを指定します。オプションです。</dd></dl><br><h2>説明</h2><p>第1引数の<code>index</code>は<a class="no-barba" href="../properties/records.html"><code>.records</code></a>(か、第3引数の<code>summary</code>が<code>true</code>の場合は<a class="no-barba" href="../properties/summary.html"><code>.summary</code></a>)配列のインデックスです。
-第2引数の<code>column_index</code>は<a class="no-barba" href="../properties/columns.html"><code>.columns</code></a>配列のインデックスです。
-この関数はセルの値を返します。</p><p>グリッドを以下のように定義すると</p><pre><code>$(<span class="hljs-string">'#grid'</span>).w2grid({
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>w2grid.getCellValue | w2ui.grid - にほんご。</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta property="og:title" content="w2grid.getCellValue | w2ui.grid - にほんご。">
+    <meta property="og:url">
+    <meta property="og:type" content="article">
+    <link rel="icon" href="https://tr.you84815.space/w2ui_grid/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link id="theme_style" rel="stylesheet" type="text/css" href="">
+    <script id="srcTheme" src="../js/toggleTheme.js" data-dir="w2ui_grid"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-106478577-1', 'auto');
+    </script>
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <div class="icon"><a class="no-barba" href="https://tr.you84815.space/">
+            <svg width="16" height="16">
+              <rect width="16" height="16" fill="#e0e0e0"></rect>
+            </svg></a></div>
+        <div class="navi_toggle" onclick="toggleMenu()">
+          <svg id="menu_close" width="24" height="24" viewBox="0 0 24 24">
+            <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path>
+            <path d="M0 0h24v24H0z" fill="none"></path>
+          </svg>
+          <svg id="menu_open" width="24" height="24" viewBox="0 0 24 24">
+            <path d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+          </svg>
+        </div>
+        <div class="title">w2ui.grid - <a class="no-barba" href="https://tr.you84815.space/">にほんご。</a></div><span id="toggleTheme">
+          <svg role="img" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path d="M8 256c0 136.966 111.033 248 248 248s248-111.034 248-248S392.966 8 256 8 8 119.033 8 256zm248 184V72c101.705 0 184 82.311 184 184 0 101.705-82.311 184-184 184z"></path>
+          </svg></span>
+      </header>
+      <div class="navi" id="navi">
+        <ul class="menu">
+          <li><a class="index" href="../index.html">Home</a></li>
+          <li><a class="overview" href="../overview.html">Overview</a></li>
+          <li><span onclick="toggleNaviSubMenu('navi_events')">Events</span>
+            <ul class="hidden" id="navi_events">
+              <li>Events
+                <ul>
+                  <li><a href="../events/onAdd.html">onAdd</a></li>
+                  <li><a href="../events/onChange.html">onChange</a></li>
+                  <li><a href="../events/onClick.html">onClick</a></li>
+                  <li><a href="../events/onCollapse.html">onCollapse</a></li>
+                  <li><a href="../events/onColumnClick.html">onColumnClick</a></li>
+                  <li><a href="../events/onColumnOnOff.html">onColumnOnOff</a></li>
+                  <li><a href="../events/onColumnResize.html">onColumnResize</a></li>
+                  <li><a href="../events/onContextMenu.html">onContextMenu</a></li>
+                  <li><a href="../events/onCopy.html">onCopy</a></li>
+                  <li><a href="../events/onDblClick.html">onDblClick</a></li>
+                  <li><a href="../events/onDelete.html">onDelete</a></li>
+                  <li><a href="../events/onEdit.html">onEdit</a></li>
+                  <li><a href="../events/onEditField.html">onEditField</a></li>
+                  <li><a href="../events/onError.html">onError</a></li>
+                  <li><a href="../events/onExpand.html">onExpand</a></li>
+                  <li><a href="../events/onKeydown.html">onKeydown</a></li>
+                  <li><a href="../events/onLoad.html">onLoad</a></li>
+                  <li><a href="../events/onMenuClick.html">onMenuClick</a></li>
+                  <li><a href="../events/onPaste.html">onPaste</a></li>
+                  <li><a href="../events/onReload.html">onReload</a></li>
+                  <li><a href="../events/onRequest.html">onRequest</a></li>
+                  <li><a href="../events/onRestore.html">onRestore</a></li>
+                  <li><a href="../events/onSave.html">onSave</a></li>
+                  <li><a href="../events/onSearch.html">onSearch</a></li>
+                  <li><a href="../events/onSelect.html">onSelect</a></li>
+                  <li><a href="../events/onSelectionExtend.html">onSelectionExtend</a></li>
+                  <li><a href="../events/onSort.html">onSort</a></li>
+                  <li><a href="../events/onStateRestore.html">onStateRestore</a></li>
+                  <li><a href="../events/onStateSave.html">onStateSave</a></li>
+                  <li><a href="../events/onSubmit.html">onSubmit</a></li>
+                  <li><a href="../events/onToolbar.html">onToolbar</a></li>
+                  <li><a href="../events/onUnselect.html">onUnselect</a></li>
+                </ul>
+              </li>
+              <li>CommonEvents
+                <ul>
+                  <li><a class="no-barba" href="../../w2ui_utils/events/onDestroy.html">onDestroy</a></li>
+                  <li><a class="no-barba" href="../../w2ui_utils/events/onRefresh.html">onRefresh</a></li>
+                  <li><a class="no-barba" href="../../w2ui_utils/events/onRender.html">onRender</a></li>
+                  <li><a class="no-barba" href="../../w2ui_utils/events/onResize.html">onResize</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><span onclick="toggleNaviSubMenu('navi_properties')">Properties</span>
+            <ul class="hidden" id="navi_properties">
+              <li>Properties
+                <ul>
+                  <li><a href="../properties/autoLoad.html">autoLoad</a></li>
+                  <li><a href="../properties/buttons.html">buttons</a></li>
+                  <li><a href="../properties/columnGroups.html">columnGroups</a></li>
+                  <li><a href="../properties/columns.html">columns</a></li>
+                  <li><a href="../properties/fixedBody.html">fixedBody</a></li>
+                  <li><a href="../properties/header.html">header</a></li>
+                  <li><a href="../properties/keyboard.html">keyboard</a></li>
+                  <li><a href="../properties/last.html">last</a></li>
+                  <li><a href="../properties/limit.html">limit</a></li>
+                  <li><a href="../properties/markSearch.html">markSearch</a></li>
+                  <li><a href="../properties/menu.html">menu</a></li>
+                  <li><a href="../properties/method.html">method</a></li>
+                  <li><a href="../properties/msgAJAXerror.html">msgAJAXerror</a></li>
+                  <li><a href="../properties/msgDelete.html">msgDelete</a></li>
+                  <li><a href="../properties/msgNotJSON.html">msgNotJSON</a></li>
+                  <li><a href="../properties/msgRefresh.html">msgRefresh</a></li>
+                  <li><a href="../properties/multiSearch.html">multiSearch</a></li>
+                  <li><a href="../properties/multiSelect.html">multiSelect</a></li>
+                  <li><a href="../properties/multiSort.html">multiSort</a></li>
+                  <li><a href="../properties/offset.html">offset</a></li>
+                  <li><a href="../properties/parser.html">parser</a></li>
+                  <li><a href="../properties/postData.html">postData</a></li>
+                  <li><a href="../properties/ranges.html">ranges</a></li>
+                  <li><a href="../properties/recid.html">recid</a></li>
+                  <li><a href="../properties/recordHeight.html">recordHeight</a></li>
+                  <li><a href="../properties/records.html">records</a></li>
+                  <li><a href="../properties/reorderColumns.html">reorderColumns</a></li>
+                  <li><a href="../properties/reorderRows.html">reorderRows</a></li>
+                  <li><a href="../properties/routeData.html">routeData</a></li>
+                  <li><a href="../properties/searchData.html">searchData</a></li>
+                  <li><a href="../properties/searches.html">searches</a></li>
+                  <li><a href="../properties/selectType.html">selectType</a></li>
+                  <li><a href="../properties/show.html">show</a></li>
+                  <li><a href="../properties/sortData.html">sortData</a></li>
+                  <li><a href="../properties/summary.html">summary</a></li>
+                  <li><a href="../properties/toolbar.html">toolbar</a></li>
+                  <li><a href="../properties/total.html">total</a></li>
+                  <li><a href="../properties/url.html">url</a></li>
+                </ul>
+              </li>
+              <li>CommonProperties
+                <ul>
+                  <li><a class="no-barba" href="../../w2ui_utils/properties/box.html">box</a></li>
+                  <li><a class="no-barba" href="../../w2ui_utils/properties/handlers.html">handlers</a></li>
+                  <li><a class="no-barba" href="../../w2ui_utils/properties/name.html">name</a></li>
+                  <li><a class="no-barba" href="../../w2ui_utils/properties/style.html">style</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><span onclick="toggleNaviSubMenu('navi_methods')">Methods</span>
+            <ul id="navi_methods">
+              <li>Methods
+                <ul>
+                  <li><a href="../methods/add.html">add</a></li>
+                  <li><a href="../methods/addColumn.html">addColumn</a></li>
+                  <li><a href="../methods/addRange.html">addRange</a></li>
+                  <li><a href="../methods/addSearch.html">addSearch</a></li>
+                  <li><a href="../methods/clear.html">clear</a></li>
+                  <li><a href="../methods/click.html">click</a></li>
+                  <li><a href="../methods/collapse.html">collapse</a></li>
+                  <li><a href="../methods/columnClick.html">columnClick</a></li>
+                  <li><a href="../methods/columnOnOff.html">columnOnOff</a></li>
+                  <li><a href="../methods/contextMenu.html">contextMenu</a></li>
+                  <li><a href="../methods/copy.html">copy</a></li>
+                  <li><a href="../methods/dblClick.html">dblClick</a></li>
+                  <li><a href="../methods/delete.html">delete</a></li>
+                  <li><a href="../methods/editField.html">editField</a></li>
+                  <li><a href="../methods/error.html">error</a></li>
+                  <li><a href="../methods/expand.html">expand</a></li>
+                  <li><a href="../methods/find.html">find</a></li>
+                  <li><a href="../methods/get.html">get</a></li>
+                  <li><a href="../methods/getCellHTML.html">getCellHTML</a></li>
+                  <li><a class="active" href="../methods/getCellValue.html">getCellValue</a></li>
+                  <li><a href="../methods/getChanges.html">getChanges</a></li>
+                  <li><a href="../methods/getColumn.html">getColumn</a></li>
+                  <li><a href="../methods/getColumnsHTML.html">getColumnsHTML</a></li>
+                  <li><a href="../methods/getFooterHTML.html">getFooterHTML</a></li>
+                  <li><a href="../methods/getRangeData.html">getRangeData</a></li>
+                  <li><a href="../methods/getRecordHTML.html">getRecordHTML</a></li>
+                  <li><a href="../methods/getRecordsHTML.html">getRecordsHTML</a></li>
+                  <li><a href="../methods/getSearch.html">getSearch</a></li>
+                  <li><a href="../methods/getSearchData.html">getSearchData</a></li>
+                  <li><a href="../methods/getSearchesHTML.html">getSearchesHTML</a></li>
+                  <li><a href="../methods/getSelection.html">getSelection</a></li>
+                  <li><a href="../methods/getSummaryHTML.html">getSummaryHTML</a></li>
+                  <li><a href="../methods/hideColumn.html">hideColumn</a></li>
+                  <li><a href="../methods/hideSearch.html">hideSearch</a></li>
+                  <li><a href="../methods/initAllField.html">initAllField</a></li>
+                  <li><a href="../methods/initColumnOnOff.html">initColumnOnOff</a></li>
+                  <li><a href="../methods/initOperator.html">initOperator</a></li>
+                  <li><a href="../methods/initResize.html">initResize</a></li>
+                  <li><a href="../methods/initSearches.html">initSearches</a></li>
+                  <li><a href="../methods/initToolbar.html">initToolbar</a></li>
+                  <li><a href="../methods/keydown.html">keydown</a></li>
+                  <li><a href="../methods/load.html">load</a></li>
+                  <li><a href="../methods/localSearch.html">localSearch</a></li>
+                  <li><a href="../methods/localSort.html">localSort</a></li>
+                  <li><a href="../methods/lock.html">lock</a></li>
+                  <li><a href="../methods/menuClick.html">menuClick</a></li>
+                  <li><a href="../methods/mergeChanges.html">mergeChanges</a></li>
+                  <li><a href="../methods/nextCell.html">nextCell</a></li>
+                  <li><a href="../methods/nextRow.html">nextRow</a></li>
+                  <li><a href="../methods/parseField.html">parseField</a></li>
+                  <li><a href="../methods/paste.html">paste</a></li>
+                  <li><a href="../methods/prevCell.html">prevCell</a></li>
+                  <li><a href="../methods/prevRow.html">prevRow</a></li>
+                  <li><a href="../methods/refreshCell.html">refreshCell</a></li>
+                  <li><a href="../methods/refreshRanges.html">refreshRanges</a></li>
+                  <li><a href="../methods/refreshRow.html">refreshRow</a></li>
+                  <li><a href="../methods/reload.html">reload</a></li>
+                  <li><a href="../methods/remove.html">remove</a></li>
+                  <li><a href="../methods/removeColumn.html">removeColumn</a></li>
+                  <li><a href="../methods/removeRange.html">removeRange</a></li>
+                  <li><a href="../methods/removeSearch.html">removeSearch</a></li>
+                  <li><a href="../methods/request.html">request</a></li>
+                  <li><a href="../methods/requestComplete.html">requestComplete</a></li>
+                  <li><a href="../methods/reset.html">reset</a></li>
+                  <li><a href="../methods/resizeBoxes.html">resizeBoxes</a></li>
+                  <li><a href="../methods/resizeRecords.html">resizeRecords</a></li>
+                  <li><a href="../methods/save.html">save</a></li>
+                  <li><a href="../methods/scroll.html">scroll</a></li>
+                  <li><a href="../methods/scrollIntoView.html">scrollIntoView</a></li>
+                  <li><a href="../methods/search.html">search</a></li>
+                  <li><a href="../methods/searchClose.html">searchClose</a></li>
+                  <li><a href="../methods/searchOpen.html">searchOpen</a></li>
+                  <li><a href="../methods/searchReset.html">searchReset</a></li>
+                  <li><a href="../methods/searchShowFields.html">searchShowFields</a></li>
+                  <li><a href="../methods/select.html">select</a></li>
+                  <li><a href="../methods/selectAll.html">selectAll</a></li>
+                  <li><a href="../methods/selectNone.html">selectNone</a></li>
+                  <li><a href="../methods/set.html">set</a></li>
+                  <li><a href="../methods/showColumn.html">showColumn</a></li>
+                  <li><a href="../methods/showSearch.html">showSearch</a></li>
+                  <li><a href="../methods/skip.html">skip</a></li>
+                  <li><a href="../methods/sort.html">sort</a></li>
+                  <li><a href="../methods/stateReset.html">stateReset</a></li>
+                  <li><a href="../methods/stateRestore.html">stateRestore</a></li>
+                  <li><a href="../methods/stateSave.html">stateSave</a></li>
+                  <li><a href="../methods/status.html">status</a></li>
+                  <li><a href="../methods/toggle.html">toggle</a></li>
+                  <li><a href="../methods/toggleColumn.html">toggleColumn</a></li>
+                  <li><a href="../methods/toggleSearch.html">toggleSearch</a></li>
+                  <li><a href="../methods/toolbarAdd.html">toolbarAdd</a></li>
+                  <li><a href="../methods/toolbarDelete.html">toolbarDelete</a></li>
+                  <li><a href="../methods/unlock.html">unlock</a></li>
+                  <li><a href="../methods/unselect.html">unselect</a></li>
+                </ul>
+              </li>
+              <li>CommonMethods
+                <ul>
+                  <li><a class="no-barba" href="../../w2ui_utils/methods/destroy.html">destroy</a></li>
+                  <li><a class="no-barba" href="../../w2ui_utils/methods/off.html">off</a></li>
+                  <li><a class="no-barba" href="../../w2ui_utils/methods/on.html">on</a></li>
+                  <li><a class="no-barba" href="../../w2ui_utils/methods/refresh.html">refresh</a></li>
+                  <li><a class="no-barba" href="../../w2ui_utils/methods/render.html">render</a></li>
+                  <li><a class="no-barba" href="../../w2ui_utils/methods/resize.html">resize</a></li>
+                  <li><a class="no-barba" href="../../w2ui_utils/methods/trigger.html">trigger</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div id="content">
+        <div id="main">
+          <div id="barba-wrapper">
+            <div class="barba-container">
+              <h1>w2grid.getCellValue</h1>
+              <div id="update_date"><span>更新日: 2018.09.06
+</span>
+              </div>
+              <h3>getCellValue(index, column_index, [summary])</h3>
+              <p>
+                セルに格納された値を取得します。
+                戻り値は<code>string</code>です。
+              </p>
+              <dl>
+                <dt><b>index</b><span class="type"> : integer</span></dt>
+                <dd>レコード配列または、サマリー配列のインデックスを指定します。</dd>
+                <dt><b>column_index</b><span class="type"> : integer</span></dt>
+                <dd>カラム配列のインデックスを指定します。</dd>
+                <dt><b>summary</b><span class="type"> : boolean</span></dt>
+                <dd>サマリーを表示するかどうかを指定します。オプションです。</dd>
+              </dl><br>
+              <h2>説明</h2>
+              <p>第1引数の<code>index</code>は<a class="no-barba" href="../properties/records.html"><code>.records</code></a>(か、第3引数の<code>summary</code>が<code>true</code>の場合は<a class="no-barba" href="../properties/summary.html"><code>.summary</code></a>)配列のインデックスです。
+                第2引数の<code>column_index</code>は<a class="no-barba" href="../properties/columns.html"><code>.columns</code></a>配列のインデックスです。
+                この関数はセルの値を返します。
+              </p>
+              <p>グリッドを以下のように定義すると</p>
+              <pre><code>$(<span class="hljs-string">'#grid'</span>).w2grid({
     <span class="hljs-attr">name</span>    : <span class="hljs-string">'grid'</span>,
     <span class="hljs-attr">columns</span>: [                
         { <span class="hljs-attr">field</span>: <span class="hljs-string">'recid'</span>, <span class="hljs-attr">caption</span>: <span class="hljs-string">'ID'</span>, <span class="hljs-attr">size</span>: <span class="hljs-string">'50px'</span> },
@@ -25,8 +307,15 @@ ga('create', 'UA-106478577-1', 'auto');</script></head><body><div id="container"
         { <span class="hljs-attr">recid</span>: <span class="hljs-number">5</span>, <span class="hljs-attr">fname</span>: <span class="hljs-string">'Kelly'</span>, <span class="hljs-attr">lname</span>: <span class="hljs-string">'Silver'</span>, <span class="hljs-attr">email</span>: <span class="hljs-string">'jdoe@gmail.com'</span>, <span class="hljs-attr">sdate</span>: <span class="hljs-string">'4/3/2012'</span> },
         { <span class="hljs-attr">recid</span>: <span class="hljs-number">6</span>, <span class="hljs-attr">fname</span>: <span class="hljs-string">'Francis'</span>, <span class="hljs-attr">lname</span>: <span class="hljs-string">'Gatos'</span>, <span class="hljs-attr">email</span>: <span class="hljs-string">'vitali@gmail.com'</span>, <span class="hljs-attr">sdate</span>: <span class="hljs-string">'2/5/2012'</span> }
     ]
-});</code></pre><br><p>以下で値を取得することができます。</p><pre><code><span class="hljs-keyword">var</span> html = w2ui[<span class="hljs-string">'grid'</span>].getCellValue(<span class="hljs-number">0</span>, <span class="hljs-number">2</span>);
-<span class="hljs-built_in">console</span>.log(html);</code></pre><br><h2>デモ</h2><p>グリッドをクリックすると、ID:1の"First Name"のセルの値を<code>console.log</code>に出力します。</p><div id="grid" style="height: 250px"></div><h5>JavaScript</h5><pre><code>$(<span class="hljs-string">'#grid'</span>).w2grid({
+});</code></pre><br>
+              <p>以下で値を取得することができます。</p>
+              <pre><code><span class="hljs-keyword">var</span> html = w2ui[<span class="hljs-string">'grid'</span>].getCellValue(<span class="hljs-number">0</span>, <span class="hljs-number">2</span>);
+<span class="hljs-built_in">console</span>.log(html);</code></pre><br>
+              <h2>デモ</h2>
+              <p>グリッドをクリックすると、ID:1の"First Name"のセルの値を<code>console.log</code>に出力します。</p>
+              <div id="grid" style="height: 250px"></div>
+              <h5>JavaScript</h5>
+              <pre><code>$(<span class="hljs-string">'#grid'</span>).w2grid({
     <span class="hljs-attr">name</span>    : <span class="hljs-string">'mygrid'</span>,
     <span class="hljs-attr">columns</span> : [
         { <span class="hljs-attr">field</span>: <span class="hljs-string">'recid'</span>, <span class="hljs-attr">caption</span>: <span class="hljs-string">'ID'</span>, <span class="hljs-attr">size</span>: <span class="hljs-string">'50px'</span> },
@@ -49,30 +338,56 @@ w2ui[<span class="hljs-string">'mygrid'</span>].on(<span class="hljs-string">'cl
     <span class="hljs-keyword">var</span> html = w2ui[<span class="hljs-string">'mygrid'</span>].getCellValue(<span class="hljs-number">0</span>, <span class="hljs-number">2</span>);
     <span class="hljs-built_in">console</span>.log(html);
 });
-</code></pre><script class="load">createObj = function() {
-  $('#grid').w2grid({
-      name    : 'mygrid',
-      columns : [
-          { field: 'recid', caption: 'ID', size: '50px' },
-          { field: 'lname', caption: 'Last Name', size: '30%' },
-          { field: 'fname', caption: 'First Name', size: '30%' },
-          { field: 'email', caption: 'Email', size: '40%' },
-          { field: 'sdate', caption: 'Start Date', size: '120px' },
-          { field: 'sdate', caption: 'End Date', size: '120px' }
-      ],
-      records: [
-          { recid: 1, fname: 'John', lname: 'doe', email: 'vitali@gmail.com', sdate: '1/3/2012' },
-          { recid: 2, fname: 'Stuart', lname: 'Motzart', email: 'jdoe@gmail.com', sdate: '2/4/2012' },
-          { recid: 3, fname: 'Jin', lname: 'Franson', email: '--', sdate: '4/23/2012' },
-          { recid: 4, fname: 'Susan', lname: 'Ottie', email: 'jdoe@gmail.com', sdate: '5/3/2012' },
-          { recid: 5, fname: 'Kelly', lname: 'Silver', email: 'jdoe@gmail.com', sdate: '4/3/2012' },
-          { recid: 6, fname: 'Francis', lname: 'Gatos', email: 'vitali@gmail.com', sdate: '2/5/2012' }
-      ],
-  });
-  w2ui['mygrid'].on('click', function(event) {
-      var html = w2ui['mygrid'].getCellValue(0, 2);
-      console.log(html);
-  });
-};</script><br><div class="license"><p>&copy; <span id="w2ui_cry">2017</span>. <img src="../img/email.png">.<br> Code licensed under the<a href="https://en.wikipedia.org/wiki/MIT_License">MIT License</a>. Documentation licensed under<a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p><p>このコンテンツはvitmalinaによる<a href="http://w2ui.com/web/docs/1.5/">w2ui.gridドキュメント</a>を翻訳/改変したものです。</p><style>.license img {
-  vertical-align: middle;
-}</style><script>document.getElementById('w2ui_cry').innerHTML = new Date().getFullYear();</script></div></div></div></div></div><footer><span> &copy; <span id="copy_year">2017</span> tobijibu</span></footer></div><noscript id="deferred-styles"><link href="../css/lazy.css" rel="stylesheet"></noscript><script src="../js/main.js" defer></script><script src="../js/jquery-2.2.4.min.js"></script><script src="../js/w2ui-1.5.rc1.min.js"></script><div id="src" hidden></div></body></html>
+</code></pre>
+              <script class="load">
+                createObj = function() {
+                  $('#grid').w2grid({
+                      name    : 'mygrid',
+                      columns : [
+                          { field: 'recid', caption: 'ID', size: '50px' },
+                          { field: 'lname', caption: 'Last Name', size: '30%' },
+                          { field: 'fname', caption: 'First Name', size: '30%' },
+                          { field: 'email', caption: 'Email', size: '40%' },
+                          { field: 'sdate', caption: 'Start Date', size: '120px' },
+                          { field: 'sdate', caption: 'End Date', size: '120px' }
+                      ],
+                      records: [
+                          { recid: 1, fname: 'John', lname: 'doe', email: 'vitali@gmail.com', sdate: '1/3/2012' },
+                          { recid: 2, fname: 'Stuart', lname: 'Motzart', email: 'jdoe@gmail.com', sdate: '2/4/2012' },
+                          { recid: 3, fname: 'Jin', lname: 'Franson', email: '--', sdate: '4/23/2012' },
+                          { recid: 4, fname: 'Susan', lname: 'Ottie', email: 'jdoe@gmail.com', sdate: '5/3/2012' },
+                          { recid: 5, fname: 'Kelly', lname: 'Silver', email: 'jdoe@gmail.com', sdate: '4/3/2012' },
+                          { recid: 6, fname: 'Francis', lname: 'Gatos', email: 'vitali@gmail.com', sdate: '2/5/2012' }
+                      ],
+                  });
+                  w2ui['mygrid'].on('click', function(event) {
+                      var html = w2ui['mygrid'].getCellValue(0, 2);
+                      console.log(html);
+                  });
+                };
+              </script><br>
+              <div class="license">
+                <p>&copy; <span id="w2ui_cry">2017</span>. <img src="../img/email.png">.<br> Code licensed under the<a href="https://en.wikipedia.org/wiki/MIT_License">MIT License</a>. Documentation licensed under<a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+                <p>このコンテンツはvitmalinaによる<a href="http://w2ui.com/web/docs/1.5/">w2ui.gridドキュメント</a>を翻訳/改変したものです。</p>
+                <style>
+                  .license img {
+                    vertical-align: middle;
+                  }
+                </style>
+                <script>document.getElementById('w2ui_cry').innerHTML = new Date().getFullYear();</script>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer><span>&copy; <span id="copy_year">2017</span> tobijibu</span></footer>
+    </div>
+    <noscript id="deferred-styles">
+      <link href="../css/lazy.css" rel="stylesheet">
+    </noscript>
+    <script src="../js/main.js" defer></script>
+    <script src="../js/jquery-2.2.4.min.js"></script>
+    <script src="../js/w2ui-1.5.rc1.min.js"></script>
+    <div id="src" hidden></div>
+  </body>
+</html>
